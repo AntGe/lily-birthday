@@ -4,6 +4,7 @@ import { altFor, credits } from "../lib/data";
 import { ChevronIcon, CloseIcon } from "./Icons";
 import { Modal } from "./Modal";
 import { Photo } from "./Photo";
+import { copy } from "../copy";
 import "./Lightbox.css";
 
 export interface LightboxItem {
@@ -42,7 +43,7 @@ export function Lightbox({ items, start, onClose }: Props) {
   }, [go]);
 
   return (
-    <Modal onClose={onClose} className="lightbox" label="Photo viewer" variant="fade">
+    <Modal onClose={onClose} className="lightbox" label={copy.lightbox.label} variant="fade">
       <div className="lb">
         <div className="lb-stage">
           <AnimatePresence initial={false} custom={dir} mode="popLayout">
@@ -60,7 +61,7 @@ export function Lightbox({ items, start, onClose }: Props) {
                 <span>{item.caption ?? altFor(item.id)}</span>
                 {credit && (
                   <span className="lb-credit">
-                    Photo: {credit.author}
+                    {copy.lightbox.credit}: {credit.author}
                     {credit.license ? ` · ${credit.license}` : ""}
                   </span>
                 )}
@@ -71,10 +72,10 @@ export function Lightbox({ items, start, onClose }: Props) {
 
         {items.length > 1 && (
           <>
-            <button type="button" className="lb-nav lb-nav--prev" onClick={() => go(-1)} aria-label="Previous photo">
+            <button type="button" className="lb-nav lb-nav--prev" onClick={() => go(-1)} aria-label={copy.lightbox.prev}>
               <ChevronIcon />
             </button>
-            <button type="button" className="lb-nav lb-nav--next" onClick={() => go(1)} aria-label="Next photo">
+            <button type="button" className="lb-nav lb-nav--next" onClick={() => go(1)} aria-label={copy.lightbox.next}>
               <ChevronIcon />
             </button>
             <p className="lb-count" aria-hidden="true">
@@ -83,9 +84,9 @@ export function Lightbox({ items, start, onClose }: Props) {
           </>
         )}
         <p className="sr-only" aria-live="polite" aria-atomic="true">
-          {`Photo ${index + 1} of ${items.length}: ${item.caption ?? altFor(item.id)}`}
+          {copy.lightbox.announce(index + 1, items.length, item.caption ?? altFor(item.id))}
         </p>
-        <button type="button" className="lb-close" onClick={onClose} aria-label="Close photo">
+        <button type="button" className="lb-close" onClick={onClose} aria-label={copy.lightbox.close}>
           <CloseIcon />
         </button>
       </div>

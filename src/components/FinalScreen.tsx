@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useRef, type CSSProperties } from "react";
-import { FINAL_NOTE, FROM_NAME, HER_NAME } from "../config";
+import { FINAL_NOTE, FROM_NAME } from "../config";
+import { copy } from "../copy";
 import { accentText } from "../lib/color";
 import { heartPuff } from "../lib/confetti";
 import { playPop } from "../lib/sound";
@@ -39,6 +40,10 @@ export function FinalScreen({ trip, onChangeMind }: Props) {
     "--paper": paperBackground(trip.wrap),
   } as CSSProperties;
 
+  // Postmark ring: "PLACE · COUNTRY ·", spread evenly around the circle (r = 41 → ~257 units)
+  const country = trip.country.split(",").pop()?.trim() ?? trip.country;
+  const ring = `${trip.name} · ${country} · `.toLocaleUpperCase("bg");
+
   const enter = (delay: number, from: object = { y: 14 }) =>
     reduced
       ? { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.3, delay: delay * 0.3 } }
@@ -69,8 +74,8 @@ export function FinalScreen({ trip, onChangeMind }: Props) {
                 <circle cx="60" cy="60" r="55" />
                 <circle cx="60" cy="60" r="31" />
                 <text>
-                  <textPath href="#pm-arc" startOffset="0">
-                    {`${trip.name} · ${trip.country} · `.toUpperCase()}
+                  <textPath href="#pm-arc" startOffset="0" textLength={256} lengthAdjust="spacing">
+                    {ring}
                   </textPath>
                 </text>
               </svg>
@@ -84,19 +89,21 @@ export function FinalScreen({ trip, onChangeMind }: Props) {
 
           <div className="postcard-text">
             <motion.p className="postcard-eyebrow" {...enter(0.5)}>
-              {trip.length} · {trip.region}
+              {[trip.length, ...trip.region.split(/\s·\s/)].map((part) => (
+                <span key={part}>{part}</span>
+              ))}
             </motion.p>
             <motion.h1 ref={headingRef} tabIndex={-1} id="final-title" className="postcard-title display" {...enter(0.6)}>
-              <span className="postcard-lead">{HER_NAME}, we’re going to</span> <em>{trip.name}!</em>
+              <span className="postcard-lead">{copy.final.lead(trip)}</span> <em>{trip.name}!</em>
             </motion.h1>
             <motion.p className="postcard-note" {...enter(0.75)}>
               {FINAL_NOTE}
             </motion.p>
             <motion.p className="postcard-sign script" {...enter(0.9)}>
-              with love, {FROM_NAME}
+              {copy.final.withLove} {FROM_NAME}
             </motion.p>
 
-            <ul className="stamps" aria-label="Highlights waiting for us">
+            <ul className="stamps" aria-label={copy.final.stampsLabel}>
               {trip.highlights.map((h, i) => (
                 <motion.li key={h.title} className="stamp" {...enter(1.2 + i * 0.09, { scale: 1.35, rotate: (i % 2 ? 6 : -6) })}>
                   <span className="stamp-inner">
@@ -112,7 +119,7 @@ export function FinalScreen({ trip, onChangeMind }: Props) {
 
       <motion.p className="final-change" {...enter(2)}>
         <button type="button" className="link-quiet" onClick={onChangeMind}>
-          change my mind
+          {copy.final.changeMind}
         </button>
       </motion.p>
     </section>

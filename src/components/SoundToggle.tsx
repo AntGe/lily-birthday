@@ -1,3 +1,4 @@
+import { copy } from "../copy";
 import { SpeakerIcon } from "./Icons";
 
 export function SoundToggle({ on, onToggle }: { on: boolean; onToggle: () => void }) {
@@ -7,8 +8,8 @@ export function SoundToggle({ on, onToggle }: { on: boolean; onToggle: () => voi
       className="sound-toggle"
       onClick={onToggle}
       aria-pressed={on}
-      aria-label="Sound"
-      title={on ? "Sound on" : "Sound off"}
+      aria-label={copy.sound.label}
+      title={on ? copy.sound.on : copy.sound.off}
     >
       <SpeakerIcon muted={!on} />
     </button>

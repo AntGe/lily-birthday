@@ -8,6 +8,7 @@ import { ClockIcon, CloseIcon, GlassIcon, MountainIcon, PawIcon, SunIcon, WaveIc
 import { Lightbox, type LightboxItem } from "./Lightbox";
 import { Modal } from "./Modal";
 import { Photo } from "./Photo";
+import { copy } from "../copy";
 import "./TripModal.css";
 
 interface Props {
@@ -53,7 +54,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
   return (
     <Modal onClose={onClose} className="trip-modal" labelledBy={titleId} variant="sheet">
       <div className="tm" style={style}>
-        <button type="button" className="tm-close" onClick={onClose} aria-label="Close trip details">
+        <button type="button" className="tm-close" onClick={onClose} aria-label={copy.modal.close}>
           <CloseIcon />
         </button>
         {/* Initial focus lands on the scroller, so arrow keys / space scroll the trip straight away */}
@@ -85,7 +86,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
                   <SunIcon /> {trip.weather.air}
                 </span>
                 <span className="pill pill--glass">
-                  <WaveIcon /> Sea {trip.weather.sea}
+                  <WaveIcon /> {copy.modal.sea} {trip.weather.sea}
                 </span>
               </div>
             </div>
@@ -101,7 +102,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
 
             <section className="tm-section" aria-labelledby={`${titleId}-why`}>
               <h3 id={`${titleId}-why`} className="tm-h3 display">
-                Why you’ll love it
+                {copy.modal.why}
               </h3>
               <div className="tm-why">
                 <motion.article className="why-card why-card--animals" {...reveal(0)} viewport={viewport}>
@@ -114,7 +115,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
                     <span className="why-icon">
                       <PawIcon />
                     </span>
-                    Animals
+                    {copy.modal.animals}
                   </h4>
                   <p>{trip.why.animals}</p>
                 </motion.article>
@@ -123,7 +124,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
                     <span className="why-icon">
                       <GlassIcon />
                     </span>
-                    Food &amp; wine
+                    {copy.modal.food}
                   </h4>
                   <p>{trip.why.food}</p>
                 </motion.article>
@@ -132,7 +133,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
                     <span className="why-icon">
                       <MountainIcon />
                     </span>
-                    Adventure
+                    {copy.modal.adventure}
                   </h4>
                   <p>{trip.why.adventure}</p>
                 </motion.article>
@@ -141,7 +142,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
 
             <section className="tm-section" aria-labelledby={`${titleId}-hl`}>
               <h3 id={`${titleId}-hl`} className="tm-h3 display">
-                Highlights
+                {copy.modal.highlights}
               </h3>
               <ul className="tm-highlights">
                 {trip.highlights.map((h, i) => (
@@ -166,7 +167,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
 
             <section className="tm-section" aria-labelledby={`${titleId}-days`}>
               <h3 id={`${titleId}-days`} className="tm-h3 display">
-                Day by day
+                {copy.modal.dayByDay}
               </h3>
               <DayTimeline
                 days={trip.days}
@@ -177,7 +178,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
 
             <section className="tm-section" aria-labelledby={`${titleId}-gallery`}>
               <h3 id={`${titleId}-gallery`} className="tm-h3 display">
-                Gallery
+                {copy.modal.gallery}
               </h3>
               <ul className="tm-gallery">
                 {gallery.map((id, i) => (
@@ -186,7 +187,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
                       type="button"
                       className="gal-tile"
                       onClick={() => setLightbox({ items: gallery.map((g) => ({ id: g })), start: i })}
-                      aria-label={`Enlarge: ${altFor(id)}`}
+                      aria-label={copy.modal.enlarge(altFor(id))}
                     >
                       <Photo id={id} sizes="(max-width: 760px) 45vw, 300px" />
                     </button>
@@ -197,7 +198,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
 
             <section className="tm-section tm-section--last" aria-labelledby={`${titleId}-gtk`}>
               <h3 id={`${titleId}-gtk`} className="tm-h3 tm-h3--small display">
-                Good to know
+                {copy.modal.goodToKnow}
               </h3>
               <ul className="tm-gtk">
                 {trip.goodToKnow.map((g) => (
@@ -209,10 +210,10 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
 
           <div className="tm-footer">
             <button type="button" className="btn btn--ghost" onClick={onClose}>
-              Keep exploring
+              {copy.modal.keepExploring}
             </button>
             <button type="button" className="btn tm-choose" onClick={() => onChoose(trip.id)}>
-              I choose {trip.name} <span aria-hidden="true">♡</span>
+              {copy.modal.chooseTrip(trip.name)} <span aria-hidden="true">♡</span>
             </button>
           </div>
         </div>

@@ -18,9 +18,9 @@
 }
 
 .choose-title {
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-  line-height: 1;
-  font-weight: 380;
+  font-size: clamp(2.5rem, 5.3vw, 3.8rem);
+  line-height: 1.05;
+  font-weight: 400;
   letter-spacing: -0.02em;
 }
 

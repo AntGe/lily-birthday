@@ -484,10 +484,10 @@
     }
   },
   "madeira-wine-lodge": {
-    "ratio": 1.4936,
+    "ratio": 1.5,
     "w": 3840,
-    "h": 2571,
-    "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JaACsACFK1zxWgAyT/YOv/wAA/u7WzPzRW4X4JivLkuzlHHFw6eq8Ap73Vd5jc1whJ0CFeiiUw6h4MwhrLw2z8hyMdly5oOnrlE4xCbbA4r9tC6Y43Q7dD8BnFoqiB89deccB3RPGHQstFOMl4UpDmQLrtrRvZ9LeVfTnLraPYUiOPOjff3THuxbwirdhv4ES2LMQIAA=",
+    "h": 2560,
+    "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC7H8AqQBXsLoly/elcUGCME+yAAMo3WifwpyowKzgtYUgfrLRxPh26bi/Zpe/+xZXi1wbsZhiNgq1jIcYHZIWkRkftKxyZVv40t2aURal2yf2k0h64XFmbIRcCRiA6fD8G7x2aYgh0E2AJVaBM94hW0PYC53yNyJPZ4ZgryYAA",
     "widths": {
       "400": 400,
       "800": 800,

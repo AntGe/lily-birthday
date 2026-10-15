@@ -3,6 +3,7 @@ import type { RefObject } from "react";
 import type { Day } from "../types";
 import { BulbIcon, GlassIcon, HeartIcon, PawIcon, PinIcon } from "./Icons";
 import { Photo } from "./Photo";
+import { copy } from "../copy";
 import "./DayTimeline.css";
 
 interface Props {
@@ -30,10 +31,10 @@ export function DayTimeline({ days, scrollRoot, onPhoto }: Props) {
 
           <div className="tl-content">
             <div className="tl-head">
-              <span className="tl-badge">Day {day.n}</span>
+              <span className="tl-badge">{copy.timeline.day(day.n)}</span>
               {day.special && (
                 <span className="tl-special">
-                  <HeartIcon /> the romantic one
+                  <HeartIcon /> {copy.timeline.romantic}
                 </span>
               )}
             </div>
@@ -50,14 +51,14 @@ export function DayTimeline({ days, scrollRoot, onPhoto }: Props) {
               <p className="tl-animal">
                 <PawIcon />
                 <span>
-                  <strong>Animal moment</strong> {day.animal}
+                  <strong>{copy.timeline.animal}</strong> {day.animal}
                 </span>
               </p>
             )}
             <p className="tl-taste">
               <GlassIcon />
               <span>
-                <strong>Taste</strong> {day.taste}
+                <strong>{copy.timeline.taste}</strong> {day.taste}
               </span>
             </p>
             <p className="tl-tip">
@@ -68,13 +69,13 @@ export function DayTimeline({ days, scrollRoot, onPhoto }: Props) {
 
           {!day.image && (
             <div className="tl-aside" aria-hidden="true">
-              <span className="tl-aside-day">Day {day.n}</span>
+              <span className="tl-aside-day">{copy.timeline.day(day.n)}</span>
               <span className="tl-aside-place display">{day.base}</span>
             </div>
           )}
 
           {day.image && (
-            <button type="button" className="tl-photo" onClick={() => onPhoto(day.image!, `Day ${day.n} · ${day.title}`)} aria-label={`Enlarge photo for day ${day.n}`}>
+            <button type="button" className="tl-photo" onClick={() => onPhoto(day.image!, `${copy.timeline.day(day.n)} · ${day.title}`)} aria-label={copy.timeline.enlargeDay(day.n)}>
               <Photo id={day.image} sizes="(max-width: 760px) 90vw, 400px" />
             </button>
           )}

@@ -101,7 +101,6 @@ h2[tabindex="-1"]:focus {
 
 .display {
   font-family: var(--font-display);
-  font-optical-sizing: auto;
   font-weight: 400;
   letter-spacing: -0.01em;
 }

@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useRef } from "react";
-import { BIRTHDAY_LINE, HER_NAME, INTRO_NOTE } from "../config";
+import { BIRTHDAY_LINE, GREETING, INTRO_NOTE } from "../config";
+import { copy } from "../copy";
 import { ArrowIcon } from "../components/Icons";
 import "./BirthdayReveal.css";
 
@@ -23,7 +24,7 @@ export function BirthdayTitle({ stage, instant }: { stage: RevealStage; instant:
   return (
     <div className={`hb ${quick ? "is-instant" : ""}`}>
       <h1 className="sr-only">
-        {BIRTHDAY_LINE}, {HER_NAME}
+        {`${BIRTHDAY_LINE}, ${GREETING.charAt(0).toLocaleLowerCase("bg")}${GREETING.slice(1)}!`}
       </h1>
       <svg className="hb-svg" viewBox="0 0 1000 230" aria-hidden="true">
         <defs>
@@ -50,7 +51,7 @@ export function BirthdayTitle({ stage, instant }: { stage: RevealStage; instant:
         animate={{ opacity: 1, y: 0 }}
         transition={quick ? { duration: 0.3 } : { delay: letters.length * 0.07 + 0.55, type: "spring", stiffness: 170, damping: 20 }}
       >
-        {HER_NAME}
+        {GREETING}
       </motion.p>
     </div>
   );
@@ -92,7 +93,7 @@ export function BirthdayNote({ stage, instant, onNext }: Props) {
         animate={{ opacity: 1, y: 0 }}
         transition={quick ? { duration: 0.3, delay: 0.1 } : { delay: 0.6, type: "spring", stiffness: 170, damping: 20 }}
       >
-        Choose one of these four <ArrowIcon />
+        {copy.reveal.next} <ArrowIcon />
       </motion.button>
     </div>
   );

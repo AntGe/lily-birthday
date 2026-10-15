@@ -13,8 +13,16 @@
 
 .hb-text {
   font-family: var(--font-script);
-  font-size: 168px;
+  /* Great Vibes: 160px keeps „Честит рожден ден“ about as wide as the old Pinyon line */
+  font-size: 160px;
   white-space: pre;
+}
+
+/* On phones the SVG is 92vw wide, so pull the swashes in from the screen edges */
+@media (max-width: 560px) {
+  .hb-text {
+    font-size: 150px;
+  }
 }
 
 /* Each letter strokes in, then fills with gold, left to right */
@@ -24,8 +32,9 @@
   stroke: #a9793f;
   stroke-width: 1.3px;
   stroke-opacity: 0.9;
-  stroke-dasharray: 1100;
-  stroke-dashoffset: 1100;
+  /* ≥ the longest single contour in the title (Great Vibes „Ч“ ≈ 1190 at 160px) */
+  stroke-dasharray: 1250;
+  stroke-dashoffset: 1250;
   animation:
     hb-stroke 1.1s cubic-bezier(0.45, 0.05, 0.3, 1) forwards,
     hb-fill 0.7s ease-out forwards;
@@ -63,7 +72,7 @@
 
 .hb-name {
   margin-top: -6px;
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-size: clamp(2.4rem, 5.4vw, 3.9rem);
   line-height: 1.05;
   font-weight: 350;
   font-style: italic;

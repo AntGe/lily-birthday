@@ -8,7 +8,8 @@ import { CARD_SIZES } from "./components/DestinationCard";
 import { photoSrcSet } from "./components/Photo";
 import { SoundToggle } from "./components/SoundToggle";
 import { TripModal } from "./components/TripModal";
-import { HER_NAME } from "./config";
+import { BIRTHDAY_LINE, GREETING, TAG_LINE } from "./config";
+import { copy } from "./copy";
 import { resetConfetti } from "./lib/confetti";
 import { heroIds, tripById } from "./lib/data";
 import { setSoundEnabled } from "./lib/sound";
@@ -77,11 +78,11 @@ export default function App() {
   const [toast, setToast] = useState<string | null>(null);
 
   useEffect(() => {
-    document.title = `For ${HER_NAME} ♡`;
+    document.title = copy.documentTitle;
     preloadHeroes();
-    // Fetch the script + italic faces early so the reveal never writes in a fallback font.
-    document.fonts?.load("120px 'Pinyon Script'").catch(() => {});
-    document.fonts?.load("italic 40px 'Fraunces'").catch(() => {});
+    // Fetch the script + italic faces (Cyrillic subsets) early so the reveal never writes in a fallback font.
+    document.fonts?.load("160px 'Great Vibes'", BIRTHDAY_LINE).catch(() => {});
+    document.fonts?.load(`italic 350 40px 'Playfair'`, `${GREETING} ${TAG_LINE}`).catch(() => {});
   }, []);
 
   useEffect(() => setSoundEnabled(sound), [sound]);
@@ -104,7 +105,7 @@ export default function App() {
     setScene("sealed");
     setResetKey((k) => k + 1);
     window.scrollTo({ top: 0 });
-    setToast("Rewrapped ♡");
+    setToast(copy.resetToast);
   }, []);
   useTripleR(reset);
 

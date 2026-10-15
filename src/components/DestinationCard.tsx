@@ -4,6 +4,7 @@ import { shortTemp } from "../lib/data";
 import type { Trip } from "../types";
 import { ArrowIcon, ClockIcon, SunIcon, WaveIcon } from "./Icons";
 import { Photo } from "./Photo";
+import { copy } from "../copy";
 import "./DestinationCard.css";
 
 export const CARD_SIZES = "(max-width: 560px) 92vw, 320px";
@@ -59,7 +60,7 @@ export const DestinationCard = forwardRef<HTMLButtonElement, Props>(function Des
       onBlur={onLeave}
       onClick={onOpen}
       aria-haspopup="dialog"
-      aria-label={`${trip.name}, ${trip.country}. ${trip.length}. ${trip.tagline}. See the full trip`}
+      aria-label={copy.card.label(trip)}
       tabIndex={inert ? -1 : 0}
     >
       <span className="dcard-frame">
@@ -96,7 +97,7 @@ export const DestinationCard = forwardRef<HTMLButtonElement, Props>(function Des
         </span>
 
         <span className="dcard-hint">
-          Tap to see the trip <ArrowIcon />
+          {copy.card.tapHint} <ArrowIcon />
         </span>
         <span className="dcard-sheen" />
       </span>

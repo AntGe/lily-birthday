@@ -90,7 +90,7 @@
 }
 
 .dcard-name {
-  font-size: 1.85rem;
+  font-size: 1.95rem;
   line-height: 1.05;
   font-weight: 450;
   color: var(--plum);
@@ -107,7 +107,7 @@
 
 .dcard-tagline {
   margin-top: 10px;
-  text-wrap: balance;
+  text-wrap: pretty;
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.02rem;

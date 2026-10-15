@@ -122,7 +122,6 @@ main {
 }
 
 .credits-id {
-  text-transform: capitalize;
   color: var(--plum);
   font-weight: 600;
 }

@@ -5,6 +5,7 @@ import { celebrate } from "../lib/confetti";
 import { trips, tripById } from "../lib/data";
 import { playFanfare } from "../lib/sound";
 import { useSceneFocus } from "../lib/useSceneFocus";
+import { copy } from "../copy";
 import "./Choose.css";
 
 interface Props {
@@ -93,7 +94,7 @@ export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, 
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 170, damping: 20, delay: 0.1 }}
         >
-          Choose your adventure
+          {copy.choose.title}
         </motion.h1>
         <motion.p
           className="choose-sub"
@@ -101,7 +102,7 @@ export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, 
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 170, damping: 20, delay: 0.22 }}
         >
-          Unwrap them all, then pick the one you love most.
+          {copy.choose.sub}
         </motion.p>
         <motion.div
           className="progress"
@@ -137,11 +138,11 @@ export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, 
                   exit={{ opacity: 0 }}
                   transition={{ type: "spring", stiffness: 170, damping: 20, delay: 0.3 }}
                 >
-                  All four are open. Which one is calling you?
+                  {copy.choose.allOpen}
                 </motion.p>
               ) : (
                 <motion.p key="count" className="progress-label" exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.25 }}>
-                  {`${count} of ${trips.length} unwrapped`}
+                  {copy.choose.progress(count, trips.length)}
                 </motion.p>
               )}
             </AnimatePresence>
@@ -176,7 +177,7 @@ export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, 
 
       <footer className="choose-foot">
         <button type="button" className="link-quiet" onClick={onCredits}>
-          Photo credits
+          {copy.choose.credits}
         </button>
       </footer>
     </motion.section>

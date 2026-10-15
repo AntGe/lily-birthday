@@ -8,6 +8,7 @@ import { DestinationCard } from "./DestinationCard";
 import { GiftBox, type BoxDims } from "./GiftBox";
 import { GiftTag } from "./GiftTag";
 import { paperStyle } from "./WrappingPaper";
+import { copy } from "../copy";
 import "./PresentSlot.css";
 
 // Each present has its own silhouette: tall, wide, cube, slim (in order).
@@ -195,7 +196,7 @@ export function PresentSlot({ trip, index, opened, onUnwrapped, onOpenTrip, onCh
             onPointerMove={onMove}
             onPointerLeave={onLeave}
             aria-disabled={phase !== "wrapped" || undefined}
-            aria-label={`Unwrap present ${index + 1} of 4: ${trip.wrap.tagHint}`}
+            aria-label={copy.choose.unwrapLabel(index + 1, 4, trip.wrap.tagHint)}
           >
             <span className="present-bob">
               <GiftBox dims={dims} paper={paperStyle(trip.wrap)} ribbon={trip.wrap.ribbon} rotateX={rx} rotateY={ry} tearable />
@@ -222,7 +223,8 @@ export function PresentSlot({ trip, index, opened, onUnwrapped, onOpenTrip, onCh
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, type: "spring", stiffness: 170, damping: 20 }}
           >
-            I choose this one<span className="sr-only">: {trip.name}</span> <span aria-hidden="true">♡</span>
+            {copy.choose.chooseThis}
+            <span className="sr-only">: {trip.name}</span> <span aria-hidden="true">♡</span>
           </motion.button>
         )}
       </div>

@@ -1,6 +1,7 @@
 import { motion, stagger, useAnimate, useReducedMotion, useSpring, type AnimationOptions, type DOMKeyframesDefinition } from "motion/react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { HER_NAME } from "../config";
+import { TAG_LINE } from "../config";
+import { copy } from "../copy";
 import { GiftBox } from "../components/GiftBox";
 import { GiftTag } from "../components/GiftTag";
 import { blushPaperStyle } from "../components/WrappingPaper";
@@ -191,18 +192,18 @@ export function Sealed({ phase, onOpen, onDone }: Props) {
               void open();
             } else skip();
           }}
-          aria-label={phase === "sealed" ? `A present for ${HER_NAME}. Click to open` : "Skip the animation"}
+          aria-label={phase === "sealed" ? copy.sealed.boxLabel : copy.sealed.skipLabel}
           tabIndex={phase === "sealed" ? 0 : -1}
         >
           <span className="ov-bob">
             <GiftBox dims={DIMS} paper={blushPaperStyle()} ribbon="#C8A46A" rotateX={rx} rotateY={ry} bowSize={210} />
             <GiftTag anchor={anchor} size="lg" phase={0.6}>
-              For {HER_NAME} <span className="ov-heart">♡</span>
+              {TAG_LINE} <span className="ov-heart">♡</span>
             </GiftTag>
           </span>
         </button>
         <p className="ov-hint" aria-hidden="true">
-          Click to open
+          {copy.sealed.hint}
         </p>
       </div>
 

@@ -44,6 +44,7 @@
   font-family: var(--font-display);
   font-size: 0.95rem;
   font-weight: 500;
+  font-variant-numeric: lining-nums;
   color: var(--plum);
   background: var(--white);
   box-shadow: 0 0 0 2px var(--gold), 0 0 0 6px var(--cream), var(--shadow-sm);

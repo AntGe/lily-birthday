@@ -5,6 +5,7 @@ import { HeartIcon } from "./Icons";
 import { Modal } from "./Modal";
 import { Photo } from "./Photo";
 import { paperBackground } from "./WrappingPaper";
+import { copy } from "../copy";
 import "./ConfirmDialog.css";
 
 interface Props {
@@ -39,14 +40,14 @@ export function ConfirmDialog({ trip, onYes, onNo }: Props) {
         <h2 id="confirm-title" className="confirm-title display">
           {trip.name}?
           <br />
-          <em>Final answer?</em> <HeartIcon />
+          <em>{copy.confirm.finalAnswer}</em> <HeartIcon />
         </h2>
         <div className="confirm-actions">
           <button type="button" className="btn confirm-yes" onClick={onYes} autoFocus>
-            Yes, this one!
+            {copy.confirm.yes}
           </button>
           <button type="button" className="btn btn--ghost" onClick={onNo}>
-            Let me look again
+            {copy.confirm.no}
           </button>
         </div>
       </div>

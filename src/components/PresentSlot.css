@@ -172,3 +172,17 @@
     animation: none;
   }
 }
+
+/* Phones: a wrapped present doesn't need the card's full height; the stage grows as the card rises */
+@media (max-width: 560px) {
+  .slot-stage {
+    transition: height 0.5s var(--ease-out);
+  }
+  .slot[data-phase="wrapped"] .slot-stage {
+    height: 360px;
+  }
+  .slot[data-phase="wrapped"] .slot-cta {
+    min-height: 0;
+    margin-top: 0;
+  }
+}

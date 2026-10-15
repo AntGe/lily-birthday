@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-// Fine-line icons, drawn to sit with Fraunces/Manrope rather than relying on OS emoji.
+// Fine-line icons, drawn to sit with Playfair/Manrope rather than relying on OS emoji.
 type P = SVGProps<SVGSVGElement>;
 const base = (props: P) => ({
   viewBox: "0 0 24 24",

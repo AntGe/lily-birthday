@@ -80,7 +80,6 @@
   font-family: var(--font-body);
   font-size: 9.6px;
   font-weight: 750;
-  letter-spacing: 2.4px;
 }
 
 .postmark-heart {
@@ -130,12 +129,25 @@
   padding: 44px 44px 40px 18px;
 }
 
+/* Segments separated by "·"; a separator that would start a line is clipped away */
 .postcard-eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.3em;
+  overflow: hidden;
   font-size: 0.7rem;
   font-weight: 750;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent-deep);
+}
+
+.postcard-eyebrow > span::before {
+  content: "·";
+  display: inline-block;
+  width: 1.3em;
+  margin-left: -1.3em;
+  text-align: center;
 }
 
 .postcard-title {
@@ -176,7 +188,7 @@
 
 .postcard-sign {
   margin-top: 12px;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   color: var(--rose-deep);
 }

@@ -30,6 +30,8 @@ export interface Trip {
   id: string;
   order: number;
   name: string;
+  /** Preposition for "we're going to …" (Bulgarian: "на" for islands, "в" for cities). */
+  prep?: string;
   country: string;
   region: string;
   length: string;
