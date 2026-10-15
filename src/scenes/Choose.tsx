@@ -16,11 +16,10 @@ interface Props {
   onOpenTrip: (id: string) => void;
   onChoose: (id: string) => void;
   onCelebrated: () => void;
-  onCredits: () => void;
 }
 
 /** Scene C: four presents, each unwrapping into a destination card. */
-export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, onCelebrated, onCredits }: Props) {
+export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, onCelebrated }: Props) {
   const [scope, animate] = useAnimate<HTMLElement>();
   const reduced = useReducedMotion();
   const headingRef = useSceneFocus<HTMLHeadingElement>();
@@ -43,7 +42,7 @@ export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, 
       if (reduced) {
         await Promise.all([
           animate(others, { opacity: 0 }, { duration: 0.3 }),
-          animate(".choose-head, .choose-foot", { opacity: 0 }, { duration: 0.3 }),
+          animate(".choose-head", { opacity: 0 }, { duration: 0.3 }),
         ]);
         await new Promise((r) => setTimeout(r, 400));
         if (!cancelled) celebratedRef.current();
@@ -53,7 +52,7 @@ export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, 
       others.forEach((el, i) => {
         animate(el, { opacity: 0, y: 90, rotate: i % 2 ? 7 : -6, scale: 0.92 }, { duration: 0.55, delay: i * 0.06, ease: [0.5, 0, 0.75, 0] });
       });
-      animate(".choose-head, .choose-foot", { opacity: 0, y: -16 }, { duration: 0.4 });
+      animate(".choose-head", { opacity: 0, y: -16 }, { duration: 0.4 });
       animate(chosen ? chosen.querySelectorAll(".slot-cta") : [], { opacity: 0 }, { duration: 0.2 });
 
       if (chosen) {
@@ -175,11 +174,6 @@ export function Choose({ opened, choosingId, onUnwrapped, onOpenTrip, onChoose, 
         </ul>
       </div>
 
-      <footer className="choose-foot">
-        <button type="button" className="link-quiet" onClick={onCredits}>
-          {copy.choose.credits}
-        </button>
-      </footer>
     </motion.section>
   );
 }

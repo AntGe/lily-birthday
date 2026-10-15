@@ -21,7 +21,6 @@ export const copy = {
     sub: "Разопаковай и четирите, а после избери любимото.",
     progress: (n: number, total: number) => `Отворени: ${n} от ${total}`,
     allOpen: "И четирите са отворени. Кое ти грабна сърцето?",
-    credits: "Автори на снимките",
     unwrapLabel: (i: number, total: number, hint: string) => `Разопаковай подарък ${i} от ${total}: ${hint}`,
     chooseThis: "Избирам това",
   },
@@ -84,12 +83,6 @@ export const copy = {
     changeMind: "размислих",
   },
 
-  credits: {
-    title: "Автори на снимките",
-    intro: "Благодарим на фотографите, които ни показаха тези места.",
-    close: "Затвори списъка с автори",
-    empty: "Списъкът с автори се генерира с npm run photos.",
-  },
 
   sound: {
     label: "Звук",

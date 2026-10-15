@@ -2,7 +2,6 @@ import { AnimatePresence, MotionConfig } from "motion/react";
 import { useCallback, useEffect, useState } from "react";
 import { Backdrop } from "./components/Backdrop";
 import { ConfirmDialog } from "./components/ConfirmDialog";
-import { CreditsDialog } from "./components/CreditsDialog";
 import { CursorSparkles } from "./components/CursorSparkles";
 import { CARD_SIZES } from "./components/DestinationCard";
 import { photoSrcSet } from "./components/Photo";
@@ -72,7 +71,6 @@ export default function App() {
   const [modalId, setModalId] = useState<string | null>(null);
   const [pendingChoice, setPendingChoice] = useState<string | null>(null);
   const [choosingId, setChoosingId] = useState<string | null>(null);
-  const [showCredits, setShowCredits] = useState(false);
   const [sound, setSound] = useState(() => storage.getSound());
   const [resetKey, setResetKey] = useState(0);
   const [toast, setToast] = useState<string | null>(null);
@@ -101,7 +99,6 @@ export default function App() {
     setModalId(null);
     setPendingChoice(null);
     setChoosingId(null);
-    setShowCredits(false);
     setScene("sealed");
     setResetKey((k) => k + 1);
     window.scrollTo({ top: 0 });
@@ -187,7 +184,6 @@ export default function App() {
               onOpenTrip={setModalId}
               onChoose={onChoose}
               onCelebrated={onCelebrated}
-              onCredits={() => setShowCredits(true)}
             />
           )}
           {scene === "chosen" && chosenTrip && <Chosen key="chosen" trip={chosenTrip} onChangeMind={changeMind} />}
@@ -200,7 +196,6 @@ export default function App() {
       <AnimatePresence>
         {pendingTrip && <ConfirmDialog key="confirm" trip={pendingTrip} onYes={confirmYes} onNo={() => setPendingChoice(null)} />}
       </AnimatePresence>
-      <AnimatePresence>{showCredits && <CreditsDialog key="credits" onClose={() => setShowCredits(false)} />}</AnimatePresence>
 
       <AnimatePresence>
         {toast && (

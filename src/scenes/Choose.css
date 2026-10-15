@@ -134,22 +134,7 @@
   min-width: 0;
 }
 
-.choose-foot {
-  margin-top: auto;
-  padding-top: 8px;
-  text-align: center;
-}
 
-/* On laptops the credits link sits quietly in the top-left corner instead of adding height */
-@media (min-width: 1080px) {
-  .choose-foot {
-    position: absolute;
-    top: max(18px, env(safe-area-inset-top));
-    left: max(22px, env(safe-area-inset-left));
-    margin: 0;
-    padding: 0;
-  }
-}
 
 @media (min-width: 1080px) and (max-height: 860px) {
   .choose {
