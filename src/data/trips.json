@@ -8,41 +8,249 @@
     "length": "13 days",
     "tagline": "Turtles, secret lagoons and a pyramid in the sea",
     "summary": "The wildest corner of the Philippines: jungle-cloaked limestone towers, glass-clear lagoons you paddle into by kayak, and white beaches with only your footprints on them. You swim beside wild sea turtles and rare dugongs, then watch the sun sink behind a pyramid-shaped island.",
-    "vibes": ["Island-hopping", "Wild sea turtles", "Turquoise lagoons", "Barefoot sunsets"],
-    "weather": { "air": "29–31°C", "sea": "~28°C", "note": "Dry, breezy season. Bikini weather every single day." },
+    "vibes": [
+      "Island-hopping",
+      "Wild sea turtles",
+      "Turquoise lagoons",
+      "Barefoot sunsets"
+    ],
+    "weather": {
+      "air": "29–31°C",
+      "sea": "~28°C",
+      "note": "Dry, breezy season. Bikini weather every single day."
+    },
     "hero": "palawan-pinagbuyutan",
-    "wrap": { "paper": "waves", "base": "#1F9E9A", "ink": "#E9FBF7", "ribbon": "#F2C14E", "tagHint": "somewhere very, very turquoise" },
+    "wrap": {
+      "paper": "waves",
+      "base": "#1F9E9A",
+      "ink": "#E9FBF7",
+      "ribbon": "#F2C14E",
+      "tagHint": "somewhere very, very turquoise"
+    },
     "why": {
-      "animals": "Snorkel above wild green and hawksbill turtles in Port Barton, and float quietly near endangered dugongs with a ranger in Busuanga. Nothing is fed, caged or ridden.",
-      "food": "Lobster grilled to order, zesty kinilaw (Filipino ceviche), mango everything, and a bottle of Bulgarian wine we bring ourselves for a private-boat sunset.",
+      "animals": "Snorkel above wild green and hawksbill turtles in Port Barton, and float quietly near endangered dugongs with a ranger in Busuanga.",
+      "food": "Pick-your-own lobster or chilli crab, zesty kinilaw (Filipino ceviche), grilled fish with ice-cold calamansi juice, and mango everything.",
       "adventure": "Kayak into the Big Lagoon, cross a hanging bridge on a limestone cliff, scooter the coast road to a 4 km wild beach, swim over a WWII shipwreck, and finish in a 39°C saltwater hot spring under the stars."
     },
     "highlights": [
-      { "title": "Kayak into the Big Lagoon", "hook": "Paddle a narrow channel into an emerald bowl ringed by 100 m limestone walls. No motors allowed.", "image": "palawan-big-lagoon-kayak" },
-      { "title": "Pinagbuyutan, the pyramid in the sea", "hook": "A sheer cone of jungle and rock with a crescent beach at its feet, plus coral right off the sand.", "image": "palawan-pinagbuyutan" },
-      { "title": "Swimming with sea turtles", "hook": "Wild turtles graze the seagrass 2–3 m below you and come up to breathe right beside you.", "image": "palawan-turtle" },
-      { "title": "Dugongs & a surreal island savanna", "hook": "Snorkel near gentle sea cows in Tagbanwa waters, then spot giraffes, zebras and rare Calamian deer on Calauit.", "image": "palawan-dugong" },
-      { "title": "Kayangan Lake & the WWII wrecks", "hook": "The Philippines' most famous viewpoint, then snorkel over a Japanese wreck only 5 m down.", "image": "palawan-kayangan-lake" },
-      { "title": "Scooter to Nacpan for sunset", "hook": "17 km of coast road to 4 km of palm-backed sand facing the open horizon.", "image": "palawan-nacpan-sunset" }
+      {
+        "title": "Kayak into the Big Lagoon",
+        "hook": "Paddle a narrow channel into an emerald bowl ringed by 100 m limestone walls. No motors allowed.",
+        "image": "palawan-big-lagoon-kayak"
+      },
+      {
+        "title": "Pinagbuyutan, the pyramid in the sea",
+        "hook": "A sheer cone of jungle and rock with a crescent beach at its feet, plus coral right off the sand.",
+        "image": "palawan-pinagbuyutan"
+      },
+      {
+        "title": "Swimming with sea turtles",
+        "hook": "Wild turtles graze the seagrass 2–3 m below you and come up to breathe right beside you.",
+        "image": "palawan-turtle"
+      },
+      {
+        "title": "Dugongs & a surreal island savanna",
+        "hook": "Snorkel near gentle sea cows in Tagbanwa waters, then spot giraffes, zebras and rare Calamian deer on Calauit.",
+        "image": "palawan-dugong"
+      },
+      {
+        "title": "Kayangan Lake & the WWII wrecks",
+        "hook": "The Philippines' most famous viewpoint, then snorkel over a Japanese wreck only 5 m down.",
+        "image": "palawan-kayangan-lake"
+      },
+      {
+        "title": "Scooter to Nacpan for sunset",
+        "hook": "17 km of coast road to 4 km of palm-backed sand facing the open horizon.",
+        "image": "palawan-nacpan-sunset"
+      }
     ],
     "days": [
-      { "n": 1, "title": "Wheels up", "base": "In the air", "do": ["Long-haul flight towards Manila", "Films, sleep, cosy socks"], "animal": null, "taste": "Two bottles of good Bulgarian wine go in the suitcase for later.", "tip": "Switch your watch to Manila time (+6 h) as soon as you board.", "image": null },
-      { "n": 2, "title": "Hello, Philippines", "base": "Puerto Princesa", "do": ["Land in Manila, short hop to Puerto Princesa", "Swim, nap, shake off the flight", "Optional: evening firefly cruise through the mangroves"], "animal": "Fireflies twinkling in the mangroves like Christmas lights", "taste": "Grilled fish and an ice-cold calamansi juice", "tip": "Keep this day gentle. Tomorrow the island begins.", "image": null },
-      { "n": 3, "title": "Road trip to the slow coast", "base": "Port Barton", "do": ["Drive north through jungle and rice fields (~3 h)", "Barefoot afternoon on the bay", "Sunset on beanbags at a beach bar"], "animal": null, "taste": "Tacos and seared tuna in a lantern-lit jungle-garden bar", "tip": "Port Barton runs on cash. ATMs are unreliable.", "image": "palawan-port-barton" },
-      { "n": 4, "title": "Turtle day", "base": "Port Barton", "do": ["Private boat to Turtle Spot first thing, while the water is glassy", "Snorkel the coral gardens of Twin Reef", "Lazy beach hours on a tiny island"], "animal": "Wild green and hawksbill turtles grazing seagrass right beneath you", "taste": "Pistachio gelato in town, then pasta by the beach", "tip": "Go early on a private boat: fewer swimmers, calmer turtles. Look, don't touch.", "image": "palawan-turtle" },
-      { "n": 5, "title": "Waterfall, then north", "base": "El Nido", "do": ["Morning jungle hike to Pamuayan Falls for a swim", "Drive north to El Nido (~3 h)", "First sunset on Las Cabanas with islands in silhouette"], "animal": null, "taste": "Kinilaw (fresh ceviche), then sunset tapas on the beach", "tip": "The pyramid island shows its classic profile from this coast at sunset.", "image": null },
-      { "n": 6, "title": "Into the Big Lagoon", "base": "El Nido", "do": ["Island tour A: kayak deep into the Big Lagoon", "Squeeze through a rock hole into the Secret Lagoon", "Snorkel Shimizu Island and 7 Commandos Beach"], "animal": "Clouds of reef fish at Shimizu, sometimes a turtle cruising by", "taste": "Beach BBQ lunch, then wood-oven pizza", "tip": "Lagoon slots are capped daily, so they get pre-registered. The deeper you paddle, the quieter it gets.", "image": "palawan-big-lagoon-kayak" },
-      { "n": 7, "title": "Cliffs and the coast road", "base": "El Nido", "do": ["Taraw Cliff canopy walk: helmets, hanging bridge, limestone scrambles", "Scooter 17 km north to Nacpan Beach", "Walk the headland to wild Calitang cove", "Open-sea sunset on deckchairs"], "animal": null, "taste": "Grilled seafood at a beach shack, sunset cocktails", "tip": "Ride home before full dark. The last stretch is gravel.", "image": "palawan-nacpan-sunset" },
-      { "n": 8, "title": "Just the two of us", "base": "El Nido", "do": ["Private boat, island tour B", "Walk the curving Snake Island sandbar at low tide", "Picnic and snorkel under the Pinagbuyutan pyramid", "Slow ride home through golden hour"], "animal": "Coral and reef fish just off Pinagbuyutan's beach", "taste": "Our Bulgarian wine, chilled in the boat cooler, poured as the sun drops behind the islands", "tip": "The romantic one. The crew times the return for sunset.", "image": "palawan-snake-island", "special": true },
-      { "n": 9, "title": "Crossing to Coron", "base": "Coron", "do": ["Morning fast ferry across the sea (~4 h)", "Climb Mt Tapyas's 721 steps for sunset over the islands", "Soak in the 39°C Maquinit saltwater hot spring after dark"], "animal": null, "taste": "Pick-your-own lobster or chilli crab", "tip": "Take seasickness tablets. There's a short flight if the sea says no.", "image": "palawan-maquinit-hot-spring" },
-      { "n": 10, "title": "Lakes of Coron Island", "base": "Coron", "do": ["7:00 at Kayangan Lake: climb to the postcard viewpoint, then swim", "Swim through the rock gap into Twin Lagoon", "Barracuda Lake's warm and cool water layers", "Snorkel the Skeleton Wreck"], "animal": "Silver fish in Barracuda Lake, maybe a turtle at Siete Pecados reef", "taste": "Lunch cooked on the boat, ribs in town", "tip": "The lakes are sacred to the Tagbanwa people. Life vests on, voices low.", "image": "palawan-kayangan-lake" },
-      { "n": 11, "title": "Dugongs and giraffes", "base": "Coron", "do": ["5:00 start across Busuanga by road and boat", "Ranger-led dugong snorkel: small groups, 15 minutes in the water, 5 m distance", "Calauit by jeep: giraffes, zebras and endemic Calamian deer"], "animal": "A dugong gliding over seagrass. The main event.", "taste": "Packed lunch on the boat, rooftop cocktails at night", "tip": "We say no to giraffe hand-feeding and just watch. Sightings of dugongs happen on about 2 in 3 trips.", "image": "palawan-dugong" },
-      { "n": 12, "title": "Wrecks and white sand", "base": "Coron", "do": ["Snorkel the Lusong Gunboat wreck (or dive the WWII wrecks)", "Afternoon on a quiet white island beach like Malcapuya"], "animal": "Reef fish sheltering among the wrecks", "taste": "Farewell tapas and wine at Coron's one proper wine bar", "tip": "This doubles as a spare day if wind cancels the dugong trip.", "image": "palawan-skeleton-wreck" },
-      { "n": 13, "title": "Homeward, sun-kissed", "base": "Busuanga → home", "do": ["Morning market stroll for mangoes", "Island hop to Manila, then home for Christmas"], "animal": null, "taste": "One last mango shake", "tip": "Home in time for Christmas, very tanned.", "image": null }
+      {
+        "n": 1,
+        "title": "Wheels up",
+        "base": "In the air",
+        "do": [
+          "Long-haul flight towards Manila",
+          "Films, sleep, cosy socks"
+        ],
+        "animal": null,
+        "taste": "",
+        "tip": "Switch your watch to Manila time (+6 h) as soon as you board.",
+        "image": null
+      },
+      {
+        "n": 2,
+        "title": "Hello, Philippines",
+        "base": "Puerto Princesa",
+        "do": [
+          "Land in Manila, short hop to Puerto Princesa",
+          "Swim, nap, shake off the flight",
+          "Optional: evening firefly cruise through the mangroves"
+        ],
+        "animal": "Fireflies twinkling in the mangroves like Christmas lights",
+        "taste": "Grilled fish and an ice-cold calamansi juice",
+        "tip": "Keep this day gentle. Tomorrow the island begins.",
+        "image": null
+      },
+      {
+        "n": 3,
+        "title": "Road trip to the slow coast",
+        "base": "Port Barton",
+        "do": [
+          "Drive north through jungle and rice fields (~3 h)",
+          "Barefoot afternoon on the bay",
+          "Sunset on beanbags at a beach bar"
+        ],
+        "animal": null,
+        "taste": "Tacos and seared tuna in a lantern-lit jungle-garden bar",
+        "tip": "Port Barton runs on cash. ATMs are unreliable.",
+        "image": "palawan-port-barton"
+      },
+      {
+        "n": 4,
+        "title": "Turtle day",
+        "base": "Port Barton",
+        "do": [
+          "Private boat to Turtle Spot first thing, while the water is glassy",
+          "Snorkel the coral gardens of Twin Reef",
+          "Lazy beach hours on a tiny island"
+        ],
+        "animal": "Wild green and hawksbill turtles grazing seagrass right beneath you",
+        "taste": "Pistachio gelato in town, then pasta by the beach",
+        "tip": "Go early on a private boat: fewer swimmers, calmer turtles. Look, don't touch.",
+        "image": "palawan-turtle"
+      },
+      {
+        "n": 5,
+        "title": "Waterfall, then north",
+        "base": "El Nido",
+        "do": [
+          "Morning jungle hike to Pamuayan Falls for a swim",
+          "Drive north to El Nido (~3 h)",
+          "First sunset on Las Cabanas with islands in silhouette"
+        ],
+        "animal": null,
+        "taste": "Kinilaw (fresh ceviche), then sunset tapas on the beach",
+        "tip": "The pyramid island shows its classic profile from this coast at sunset.",
+        "image": null
+      },
+      {
+        "n": 6,
+        "title": "Into the Big Lagoon",
+        "base": "El Nido",
+        "do": [
+          "Island tour A: kayak deep into the Big Lagoon",
+          "Squeeze through a rock hole into the Secret Lagoon",
+          "Snorkel Shimizu Island and 7 Commandos Beach"
+        ],
+        "animal": "Clouds of reef fish at Shimizu, sometimes a turtle cruising by",
+        "taste": "Beach BBQ lunch, then wood-oven pizza",
+        "tip": "Lagoon slots are capped daily, so they get pre-registered. The deeper you paddle, the quieter it gets.",
+        "image": "palawan-big-lagoon-kayak"
+      },
+      {
+        "n": 7,
+        "title": "Cliffs and the coast road",
+        "base": "El Nido",
+        "do": [
+          "Taraw Cliff canopy walk: helmets, hanging bridge, limestone scrambles",
+          "Scooter 17 km north to Nacpan Beach",
+          "Walk the headland to wild Calitang cove",
+          "Open-sea sunset on deckchairs"
+        ],
+        "animal": null,
+        "taste": "Grilled seafood at a beach shack, sunset cocktails",
+        "tip": "Ride home before full dark. The last stretch is gravel.",
+        "image": "palawan-nacpan-sunset"
+      },
+      {
+        "n": 8,
+        "title": "Just the two of us",
+        "base": "El Nido",
+        "do": [
+          "Private boat, island tour B",
+          "Walk the curving Snake Island sandbar at low tide",
+          "Picnic and snorkel under the Pinagbuyutan pyramid",
+          "Slow ride home through golden hour"
+        ],
+        "animal": "Coral and reef fish just off Pinagbuyutan's beach",
+        "taste": "A picnic on the boat under the Pinagbuyutan pyramid, then sunset behind the islands",
+        "tip": "The romantic one. The crew times the return for sunset.",
+        "image": "palawan-snake-island",
+        "special": true
+      },
+      {
+        "n": 9,
+        "title": "Crossing to Coron",
+        "base": "Coron",
+        "do": [
+          "Morning fast ferry across the sea (~4 h)",
+          "Climb Mt Tapyas's 721 steps for sunset over the islands",
+          "Soak in the 39°C Maquinit saltwater hot spring after dark"
+        ],
+        "animal": null,
+        "taste": "Pick-your-own lobster or chilli crab",
+        "tip": "Take seasickness tablets. There's a short flight if the sea says no.",
+        "image": "palawan-maquinit-hot-spring"
+      },
+      {
+        "n": 10,
+        "title": "Lakes of Coron Island",
+        "base": "Coron",
+        "do": [
+          "7:00 at Kayangan Lake: climb to the postcard viewpoint, then swim",
+          "Swim through the rock gap into Twin Lagoon",
+          "Barracuda Lake's warm and cool water layers",
+          "Snorkel the Skeleton Wreck"
+        ],
+        "animal": "Silver fish in Barracuda Lake, maybe a turtle at Siete Pecados reef",
+        "taste": "Lunch cooked on the boat, ribs in town",
+        "tip": "The lakes are sacred to the Tagbanwa people. Life vests on, voices low.",
+        "image": "palawan-kayangan-lake"
+      },
+      {
+        "n": 11,
+        "title": "Dugongs and giraffes",
+        "base": "Coron",
+        "do": [
+          "5:00 start across Busuanga by road and boat",
+          "Ranger-led dugong snorkel: small groups, 15 minutes in the water, 5 m distance",
+          "Calauit by jeep: giraffes, zebras and endemic Calamian deer"
+        ],
+        "animal": "A dugong gliding over seagrass. The main event.",
+        "taste": "Packed lunch on the boat, rooftop cocktails at night",
+        "tip": "We say no to giraffe hand-feeding and just watch. Sightings of dugongs happen on about 2 in 3 trips.",
+        "image": "palawan-dugong"
+      },
+      {
+        "n": 12,
+        "title": "Wrecks and white sand",
+        "base": "Coron",
+        "do": [
+          "Snorkel the Lusong Gunboat wreck (or dive the WWII wrecks)",
+          "Afternoon on a quiet white island beach like Malcapuya"
+        ],
+        "animal": "Reef fish sheltering among the wrecks",
+        "taste": "Farewell tapas and wine at Coron's one proper wine bar",
+        "tip": "This doubles as a spare day if wind cancels the dugong trip.",
+        "image": "palawan-skeleton-wreck"
+      },
+      {
+        "n": 13,
+        "title": "Homeward, sun-kissed",
+        "base": "Busuanga → home",
+        "do": [
+          "Morning market stroll for mangoes",
+          "Island hop to Manila, then home for Christmas"
+        ],
+        "animal": null,
+        "taste": "One last mango shake",
+        "tip": "Home in time for Christmas, very tanned.",
+        "image": null
+      }
     ],
     "goodToKnow": [
       "Dry northeast-monsoon season: hot, breezy, some afternoon chop on open water.",
-      "No wineries here. We bring our own bottles for the boat sunset.",
       "Ethical only: no Oslob whale-shark feeding, no animal feeding anywhere.",
       "We skip the crowded Underground River. Turtles beat it."
     ]
@@ -56,33 +264,193 @@
     "length": "9 days",
     "tagline": "One island, two moods, a billion stars",
     "summary": "Two islands in one: a sunny south where pilot whales live just offshore beneath 600 m sea cliffs, and a lush green north of cloud forests, black-sand coves and volcanic vineyards. In between rises Teide, and above it one of the clearest night skies on Earth.",
-    "vibes": ["Volcanic wild", "Whales & dolphins", "Wine & guachinches", "Stargazing"],
-    "weather": { "air": "~25°C south · ~20°C north", "sea": "~22°C", "note": "Shorts and tees by the sea, a fleece for the volcano at night." },
+    "vibes": [
+      "Volcanic wild",
+      "Whales & dolphins",
+      "Wine & guachinches",
+      "Stargazing"
+    ],
+    "weather": {
+      "air": "~25°C south · ~20°C north",
+      "sea": "~22°C",
+      "note": "Shorts and tees by the sea, a fleece for the volcano at night."
+    },
     "hero": "tenerife-teide-stars",
-    "wrap": { "paper": "stars", "base": "#1E2A4A", "ink": "#F3E3B5", "ribbon": "#D9B26A", "tagHint": "volcanoes & a sky full of stars" },
+    "wrap": {
+      "paper": "stars",
+      "base": "#1E2A4A",
+      "ink": "#F3E3B5",
+      "ribbon": "#D9B26A",
+      "tagHint": "volcanoes & a sky full of stars"
+    },
     "why": {
       "animals": "Wild pilot whales and dolphins that live here all year, watched from small licensed boats at a respectful 60 m, with no tanks and no shows. Plus birds found nowhere else on Earth, like the Tenerife blue chaffinch.",
       "food": "We'd be there in guachinche season, when farm families open their homes to pour their own new wine next to papas arrugadas and mojo. Volcanic-slope tastings with island cheeses, 600 m above the Atlantic.",
       "adventure": "Kayak under the Los Gigantes cliffs, hike volcanic moonscapes and mossy laurel forest, and drive the hairpin road to Masca. Every day ends with a different sunset."
     },
     "highlights": [
-      { "title": "Sunset above the clouds, then the Milky Way", "hook": "Cable car to 3,555 m as Teide's shadow falls over a sea of clouds, then telescopes under a protected Starlight sky.", "image": "tenerife-teide-stars" },
-      { "title": "Pilot whales & dolphins, ethically", "hook": "A resident pod lives in the protected strait to La Gomera, so sightings happen all year.", "image": "tenerife-pilot-whales" },
-      { "title": "Kayak under Los Gigantes", "hook": "Paddle past sea caves at the foot of 600 m cliffs, then snorkel in clear water.", "image": "tenerife-los-gigantes-cliffs" },
-      { "title": "Masca, the hidden valley", "hook": "A hairpin road to a hamlet clinging above a ravine, with La Gomera floating on the horizon.", "image": "tenerife-masca-valley" },
-      { "title": "Cloud forest to black-sand sunset", "hook": "Moss-draped laurel tunnels in Anaga give way to the sea stacks of Benijo at golden hour.", "image": "tenerife-anaga-laurel-forest" },
-      { "title": "Wine country in guachinche season", "hook": "Tastings on volcanic slopes, then dinner where a family pours its own young wine from the jug.", "image": "tenerife-papas-mojo" }
+      {
+        "title": "Sunset above the clouds, then the Milky Way",
+        "hook": "Cable car to 3,555 m as Teide's shadow falls over a sea of clouds, then telescopes under a protected Starlight sky.",
+        "image": "tenerife-teide-stars"
+      },
+      {
+        "title": "Pilot whales & dolphins, ethically",
+        "hook": "A resident pod lives in the protected strait to La Gomera, so sightings happen all year.",
+        "image": "tenerife-pilot-whales"
+      },
+      {
+        "title": "Kayak under Los Gigantes",
+        "hook": "Paddle past sea caves at the foot of 600 m cliffs, then snorkel in clear water.",
+        "image": "tenerife-los-gigantes-cliffs"
+      },
+      {
+        "title": "Masca, the hidden valley",
+        "hook": "A hairpin road to a hamlet clinging above a ravine, with La Gomera floating on the horizon.",
+        "image": "tenerife-masca-valley"
+      },
+      {
+        "title": "Cloud forest to black-sand sunset",
+        "hook": "Moss-draped laurel tunnels in Anaga give way to the sea stacks of Benijo at golden hour.",
+        "image": "tenerife-anaga-laurel-forest"
+      },
+      {
+        "title": "Wine country in guachinche season",
+        "hook": "Tastings on volcanic slopes, then dinner where a family pours its own young wine from the jug.",
+        "image": "tenerife-papas-mojo"
+      }
     ],
     "days": [
-      { "n": 1, "title": "Hello, sunshine", "base": "Sunny southwest", "do": ["Land, grab the car, shorts on", "Walk the black sand of Playa de la Arena", "Sunset behind La Gomera from the Los Gigantes seafront"], "animal": null, "taste": "Catch of the day with papas arrugadas and green mojo by the harbour", "tip": "Pack water shoes and reef-safe sunscreen. You'll use both all week.", "image": null },
-      { "n": 2, "title": "The whales' backyard", "base": "Sunny southwest", "do": ["Morning small-boat whale & dolphin trip into the protected strait (~3 h)", "Lazy beach afternoon", "Swim in the natural pool under the cliffs if the sea is calm"], "animal": "Resident pilot whales and bottlenose dolphins, watched from 60 m with the engine quiet", "taste": "Grilled limpets and a crisp young Listán Blanco at sunset", "tip": "Only licensed 'Barco Azul' boats: no chasing, no swimming with them.", "image": "tenerife-pilot-whales" },
-      { "n": 3, "title": "Giants and the hidden valley", "base": "Sunny southwest", "do": ["Morning kayak under the Los Gigantes cliffs, with a snorkel stop", "Road trip up the TF-436 hairpins to Masca", "A barraquito (layered coffee) on a terrace above the gorge", "Sunset at Mirador de Cherfe"], "animal": "Dolphins or a turtle may pass the kayak. Watch, never approach.", "taste": "Barraquito, then local goat cheese with palm honey", "tip": "Feeling sporty? Swap in the Masca gorge hike down to the sea and take a boat back.", "image": "tenerife-los-gigantes-cliffs" },
-      { "n": 4, "title": "Above the clouds", "base": "Over Teide to the green north", "do": ["Drive up through the pine forest", "Hike the Roques de García loop in the volcanic caldera", "Cable car at sunset to 3,555 m: Teide's shadow over a sea of clouds", "Stargazing with a guide and telescopes"], "animal": "The Tenerife blue chaffinch, found only on this island, visits the pond at Las Lajas", "taste": "Hot chocolate and a picnic under the Milky Way", "tip": "25°C at the beach, near 0°C up top after dark. Bring layers.", "image": "tenerife-teide-road", "special": true },
-      { "n": 5, "title": "Wine, honey and black sand", "base": "Green north", "do": ["Sleep in", "Bodega tasting on volcanic slopes: three wines with island cheeses", "Casa del Vino, a 300-year-old farmhouse with a wine-and-honey museum", "Late afternoon at El Bollullo, a wild black-sand cove"], "animal": null, "taste": "Guachinche night: house wine from the jug, slow-cooked meats, papas with red mojo", "tip": "Guachinches are cash-only, Spanish-only and wonderfully chaotic.", "image": "tenerife-papas-mojo" },
-      { "n": 6, "title": "Lava pools and a dragon tree", "base": "Green north", "do": ["Swim in Garachico's lava-rock natural pools", "Icod's thousand-year-old dragon tree", "Sunset on Playa Jardín's black sand among gardens and waterfalls"], "animal": "Seabirds nesting on the islet off Garachico", "taste": "Grilled parrotfish by the sea and a glass of Malvasía", "tip": "Swim the pools only when the sea is calm. On big-swell days, the waves are a show instead.", "image": "tenerife-garachico-pools" },
-      { "n": 7, "title": "Into the cloud forest", "base": "Green north", "do": ["Boardwalk through moss-draped laurel forest at Cruz del Carmen", "Hike a ridge loop with 360° views of Anaga", "Lunch in the village of Taganana", "Sunset on the black sand and sea stacks of Benijo"], "animal": "Listen for laurel pigeons, which live only in these ancient forests", "taste": "Fresh fish with mojo verde in a tiny seaside village", "tip": "Start early. Bring a torch for the steps back up from Benijo.", "image": "tenerife-benijo-sunset" },
-      { "n": 8, "title": "Pastel streets and a last swim", "base": "Green north", "do": ["La Laguna's UNESCO old town of pastel mansions", "Market in Santa Cruz for cheeses, fruit and flowers", "Afternoon swim at golden Las Teresitas"], "animal": null, "taste": "Farewell candlelit dinner with volcanic wines and a sweet Malvasía to finish", "tip": "Climb the Concepción tower for rooftop views.", "image": "tenerife-la-laguna" },
-      { "n": 9, "title": "Adiós, volcano", "base": "To the airport", "do": ["Slow breakfast and a last barraquito", "Pack the bottles we loved and some island honey"], "animal": null, "taste": "Quesadillas (sweet cheese pastries) for the road", "tip": "Leave buffer time for traffic around Santa Cruz.", "image": null }
+      {
+        "n": 1,
+        "title": "Hello, sunshine",
+        "base": "Sunny southwest",
+        "do": [
+          "Land, grab the car, shorts on",
+          "Walk the black sand of Playa de la Arena",
+          "Sunset behind La Gomera from the Los Gigantes seafront"
+        ],
+        "animal": null,
+        "taste": "Catch of the day with papas arrugadas and green mojo by the harbour",
+        "tip": "Pack water shoes and reef-safe sunscreen. You'll use both all week.",
+        "image": null
+      },
+      {
+        "n": 2,
+        "title": "The whales' backyard",
+        "base": "Sunny southwest",
+        "do": [
+          "Morning small-boat whale & dolphin trip into the protected strait (~3 h)",
+          "Lazy beach afternoon",
+          "Swim in the natural pool under the cliffs if the sea is calm"
+        ],
+        "animal": "Resident pilot whales and bottlenose dolphins, watched from 60 m with the engine quiet",
+        "taste": "Grilled limpets and a crisp young Listán Blanco at sunset",
+        "tip": "Only licensed 'Barco Azul' boats: no chasing, no swimming with them.",
+        "image": "tenerife-pilot-whales"
+      },
+      {
+        "n": 3,
+        "title": "Giants and the hidden valley",
+        "base": "Sunny southwest",
+        "do": [
+          "Morning kayak under the Los Gigantes cliffs, with a snorkel stop",
+          "Road trip up the TF-436 hairpins to Masca",
+          "A barraquito (layered coffee) on a terrace above the gorge",
+          "Sunset at Mirador de Cherfe"
+        ],
+        "animal": "Dolphins or a turtle may pass the kayak. Watch, never approach.",
+        "taste": "Barraquito, then local goat cheese with palm honey",
+        "tip": "Feeling sporty? Swap in the Masca gorge hike down to the sea and take a boat back.",
+        "image": "tenerife-los-gigantes-cliffs"
+      },
+      {
+        "n": 4,
+        "title": "Above the clouds",
+        "base": "Over Teide to the green north",
+        "do": [
+          "Drive up through the pine forest",
+          "Hike the Roques de García loop in the volcanic caldera",
+          "Cable car at sunset to 3,555 m: Teide's shadow over a sea of clouds",
+          "Stargazing with a guide and telescopes"
+        ],
+        "animal": "The Tenerife blue chaffinch, found only on this island, visits the pond at Las Lajas",
+        "taste": "Hot chocolate and a picnic under the Milky Way",
+        "tip": "25°C at the beach, near 0°C up top after dark. Bring layers.",
+        "image": "tenerife-teide-road",
+        "special": true
+      },
+      {
+        "n": 5,
+        "title": "Wine, honey and black sand",
+        "base": "Green north",
+        "do": [
+          "Sleep in",
+          "Bodega tasting on volcanic slopes: three wines with island cheeses",
+          "Casa del Vino, a 300-year-old farmhouse with a wine-and-honey museum",
+          "Late afternoon at El Bollullo, a wild black-sand cove"
+        ],
+        "animal": null,
+        "taste": "Guachinche night: house wine from the jug, slow-cooked meats, papas with red mojo",
+        "tip": "Guachinches are cash-only, Spanish-only and wonderfully chaotic.",
+        "image": "tenerife-papas-mojo"
+      },
+      {
+        "n": 6,
+        "title": "Lava pools and a dragon tree",
+        "base": "Green north",
+        "do": [
+          "Swim in Garachico's lava-rock natural pools",
+          "Icod's thousand-year-old dragon tree",
+          "Sunset on Playa Jardín's black sand among gardens and waterfalls"
+        ],
+        "animal": "Seabirds nesting on the islet off Garachico",
+        "taste": "Grilled parrotfish by the sea and a glass of Malvasía",
+        "tip": "Swim the pools only when the sea is calm. On big-swell days, the waves are a show instead.",
+        "image": "tenerife-garachico-pools"
+      },
+      {
+        "n": 7,
+        "title": "Into the cloud forest",
+        "base": "Green north",
+        "do": [
+          "Boardwalk through moss-draped laurel forest at Cruz del Carmen",
+          "Hike a ridge loop with 360° views of Anaga",
+          "Lunch in the village of Taganana",
+          "Sunset on the black sand and sea stacks of Benijo"
+        ],
+        "animal": "Listen for laurel pigeons, which live only in these ancient forests",
+        "taste": "Fresh fish with mojo verde in a tiny seaside village",
+        "tip": "Start early. Bring a torch for the steps back up from Benijo.",
+        "image": "tenerife-benijo-sunset"
+      },
+      {
+        "n": 8,
+        "title": "Pastel streets and a last swim",
+        "base": "Green north",
+        "do": [
+          "La Laguna's UNESCO old town of pastel mansions",
+          "Market in Santa Cruz for cheeses, fruit and flowers",
+          "Afternoon swim at golden Las Teresitas"
+        ],
+        "animal": null,
+        "taste": "Farewell candlelit dinner with volcanic wines and a sweet Malvasía to finish",
+        "tip": "Climb the Concepción tower for rooftop views.",
+        "image": "tenerife-la-laguna"
+      },
+      {
+        "n": 9,
+        "title": "Adiós, volcano",
+        "base": "To the airport",
+        "do": [
+          "Slow breakfast and a last barraquito",
+          "Pack the bottles we loved and some island honey"
+        ],
+        "animal": null,
+        "taste": "Quesadillas (sweet cheese pastries) for the road",
+        "tip": "Leave buffer time for traffic around Santa Cruz.",
+        "image": null
+      }
     ],
     "goodToKnow": [
       "The north is greener and gets more showers; the south is sunnier and drier.",
@@ -99,34 +467,210 @@
     "length": "10 days",
     "tagline": "Penguins, baboons, vineyards and a safari",
     "summary": "A flat-topped mountain over a sparkling city, a wild coast where penguins waddle past swimmers and baboons patrol the cliffs, and rolling wine valleys where every tasting comes with a view. Then a road trip east to whale cliffs and a malaria-free Big 5 safari under huge Karoo skies.",
-    "vibes": ["Wildlife & ocean", "Wine & gourmet", "Epic road trip", "Big 5 safari"],
-    "weather": { "air": "~15–24°C (up to 26°C in the Karoo)", "sea": "~12–18°C (bracing!)", "note": "Early summer: sunny, sometimes very windy. Shorts by day, a light jacket at night." },
+    "vibes": [
+      "Wildlife & ocean",
+      "Wine & gourmet",
+      "Epic road trip",
+      "Big 5 safari"
+    ],
+    "weather": {
+      "air": "~15–24°C (up to 26°C in the Karoo)",
+      "sea": "~12–18°C (bracing!)",
+      "note": "Early summer: sunny, sometimes very windy. Shorts by day, a light jacket at night."
+    },
     "hero": "capetown-boulders-penguins",
-    "wrap": { "paper": "proteas", "base": "#E8A3A0", "ink": "#7A2E3A", "ribbon": "#C9A46A", "tagHint": "penguins & wine hills" },
+    "wrap": {
+      "paper": "proteas",
+      "base": "#E8A3A0",
+      "ink": "#7A2E3A",
+      "ribbon": "#C9A46A",
+      "tagHint": "penguins & wine hills"
+    },
     "why": {
       "animals": "Wild penguins at Boulders, playful seals twirling around you off Hout Bay, baboons and ostriches at Cape Point, and free-roaming elephants, giraffes and rare white lions on safari. No petting, no shows, only wild animals.",
       "food": "Chocolate-and-wine pairings in Constantia, a gourmet pairing lunch in the Heaven-and-Earth valley, Cap Classique bubbly on Route 62, and a hop-on wine tram through Franschhoek's vineyards.",
       "adventure": "Hike Table Mountain and Lion's Head, kayak to the penguins, then drive Chapman's Peak, Clarence Drive and Route 62: three of the world's great drives on one loop."
     },
     "highlights": [
-      { "title": "Paddle to the penguins", "hook": "Kayak over clear water at dawn while African penguins rocket past toward their fishing grounds.", "image": "capetown-boulders-penguins" },
-      { "title": "Snorkel with fur seals", "hook": "Curious young seals twirl, stare into your mask and tug your fins. Wild and fully on their terms.", "image": "capetown-seal-snorkel" },
-      { "title": "Big 5 safari in the Karoo", "hook": "Free-roaming elephants, white lions, cheetah and rhino across 62,000 ha of mountains, with bush walks and starry nights.", "image": "capetown-sanbona-elephants" },
-      { "title": "Chapman's Peak at golden hour", "hook": "9 km and 114 bends carved into a sheer cliff above the Atlantic.", "image": "capetown-chapmans-peak" },
-      { "title": "Franschhoek Wine Tram", "hook": "Hop between historic estates for oyster, chocolate and bubbly pairings.", "image": "capetown-franschhoek-vineyards" },
-      { "title": "Table Mountain & Lion's Head", "hook": "Climb onto a 1,000 m tabletop, then watch the sun drop into the Atlantic from Lion's Head.", "image": "capetown-table-mountain" }
+      {
+        "title": "Paddle to the penguins",
+        "hook": "Kayak over clear water at dawn while African penguins rocket past toward their fishing grounds.",
+        "image": "capetown-boulders-penguins"
+      },
+      {
+        "title": "Snorkel with fur seals",
+        "hook": "Curious young seals twirl, stare into your mask and tug your fins. Wild and fully on their terms.",
+        "image": "capetown-seal-snorkel"
+      },
+      {
+        "title": "Big 5 safari in the Karoo",
+        "hook": "Free-roaming elephants, white lions, cheetah and rhino across 62,000 ha of mountains, with bush walks and starry nights.",
+        "image": "capetown-sanbona-elephants"
+      },
+      {
+        "title": "Chapman's Peak at golden hour",
+        "hook": "9 km and 114 bends carved into a sheer cliff above the Atlantic.",
+        "image": "capetown-chapmans-peak"
+      },
+      {
+        "title": "Franschhoek Wine Tram",
+        "hook": "Hop between historic estates for oyster, chocolate and bubbly pairings.",
+        "image": "capetown-franschhoek-vineyards"
+      },
+      {
+        "title": "Table Mountain & Lion's Head",
+        "hook": "Climb onto a 1,000 m tabletop, then watch the sun drop into the Atlantic from Lion's Head.",
+        "image": "capetown-table-mountain"
+      }
     ],
     "days": [
-      { "n": 1, "title": "Hello, Mother City", "base": "Cape Town, Atlantic side", "do": ["Land, pick up the car", "Sunset stroll on the Sea Point promenade", "Sundowners in Camps Bay as the Twelve Apostles turn pink"], "animal": "Fur seals snoozing on the harbour platforms at the Waterfront", "taste": "Seafood and a chilled Cape Chenin Blanc", "tip": "Long flight. If we land late, we just sleep.", "image": null },
-      { "n": 2, "title": "On top of the table", "base": "Cape Town", "do": ["Hike up Table Mountain (or take the rotating cable car)", "Wander Bo-Kaap's candy-coloured streets", "Food market afternoon", "Lion's Head sunset hike"], "animal": "Dassies (rock hyraxes) sunbathing on the summit rocks", "taste": "Cape Malay curry, samoosas and koeksisters in Bo-Kaap", "tip": "If the 'tablecloth' cloud is down, we swap with Day 4.", "image": "capetown-bo-kaap" },
-      { "n": 3, "title": "Penguins, baboons and the edge of Africa", "base": "Cape Town", "do": ["Dawn sea-kayak to see penguins from the water", "Boulders Beach boardwalk and a swim among the boulders", "Cape of Good Hope: lighthouse and wild fynbos", "Drive Chapman's Peak into the sunset"], "animal": "Penguins at dawn, then chacma baboons, ostriches and eland roaming the cape", "taste": "Harbour fish and chips by False Bay", "tip": "Baboons open car doors! Windows up, food hidden, watch from a few metres.", "image": "capetown-cape-point-baboons" },
-      { "n": 4, "title": "Seals, gardens and Constantia", "base": "Cape Town", "do": ["Morning seal snorkel off Hout Bay (wetsuit provided)", "Kirstenbosch gardens and the treetop canopy walkway", "Constantia, South Africa's oldest wine route, with a chocolate-and-wine pairing"], "animal": "Wild seals pirouetting around you underwater, then sunbirds sipping from proteas", "taste": "Vin de Constance, the sweet wine Napoleon asked for in exile", "tip": "We skip the harbour 'seal men' who make seals pose for tips.", "image": "capetown-seal-snorkel" },
-      { "n": 5, "title": "The whale coast", "base": "Hermanus", "do": ["Drive cliff-hugging Clarence Drive along False Bay", "Stony Point: a quiet penguin colony on a boardwalk", "Walk Hermanus' 12 km clifftop path", "Afternoon in the Heaven-and-Earth wine valley"], "animal": "Penguins and cormorants at Stony Point, maybe a late-season whale close to the cliffs", "taste": "A food-and-wine pairing lunch among Pinot Noir vines", "tip": "Whales are leaving by now, so a sighting is a bonus, not a promise.", "image": "capetown-hermanus-whale" },
-      { "n": 6, "title": "Two oceans and into the Karoo", "base": "Safari reserve", "do": ["Cape Agulhas: Africa's southernmost tip, where two oceans meet", "Lunch in historic Swellendam", "Tradouw Pass gorge onto Route 62", "First game drive at golden hour"], "animal": "First safari sighting: elephants, giraffes or the white lions", "taste": "Dinner under the stars at the reserve", "tip": "The longest driving day. Early start, full tank.", "image": "capetown-cape-agulhas" },
-      { "n": 7, "title": "Wild Karoo", "base": "Safari reserve", "do": ["Dawn game drive tracking elephants, lions and cheetah", "Guided bush walk to ancient San rock art", "Pool and siesta in the Karoo warmth", "Private sundowner with bubbly on a quiet ridge, then stargazing"], "animal": "Elephants at a waterhole, the white lion pride, giraffes against the mountains", "taste": "A glass of Robertson Cap Classique as the mountains turn copper", "tip": "The romantic one. A fleece for dawn drives, a hat for midday.", "image": "capetown-sanbona-white-lion", "special": true },
-      { "n": 8, "title": "Route 62 wine road", "base": "Franschhoek", "do": ["Last dawn game drive", "Arty Barrydale and the Montagu hot springs", "Sparkling-wine tasting in the Robertson valley", "Golden hour in Franschhoek's vineyards"], "animal": "One last safari sighting at dawn", "taste": "Cap Classique bubbles, then dinner in South Africa's gourmet village", "tip": "The driver spits, the birthday girl sips.", "image": null },
-      { "n": 9, "title": "The wine tram", "base": "Franschhoek", "do": ["First wine tram departure, 3–4 estates on one line", "Oyster pairing, chocolate pairing, art-and-garden estates", "Long lazy vineyard lunch and an evening stroll"], "animal": "One tram line stops at a wine farm with a sanctuary for rescued pigs", "taste": "Oysters with a crisp white, then bubbly", "tip": "Nobody drives today.", "image": "capetown-franschhoek-vineyards" },
-      { "n": 10, "title": "A farewell with a view", "base": "To the airport", "do": ["Drive the Helshoogte Pass through mountain-and-vine panoramas", "Final tasting on a terrace over the Stellenbosch valley", "To the airport"], "animal": null, "taste": "A last glass with a sculpture-garden view", "tip": "Birthday bonus idea: adopt a penguin through the seabird rescue charity.", "image": "capetown-stellenbosch-winery" }
+      {
+        "n": 1,
+        "title": "Hello, Mother City",
+        "base": "Cape Town, Atlantic side",
+        "do": [
+          "Land, pick up the car",
+          "Sunset stroll on the Sea Point promenade",
+          "Sundowners in Camps Bay as the Twelve Apostles turn pink"
+        ],
+        "animal": "Fur seals snoozing on the harbour platforms at the Waterfront",
+        "taste": "Seafood and a chilled Cape Chenin Blanc",
+        "tip": "Long flight. If we land late, we just sleep.",
+        "image": null
+      },
+      {
+        "n": 2,
+        "title": "On top of the table",
+        "base": "Cape Town",
+        "do": [
+          "Hike up Table Mountain (or take the rotating cable car)",
+          "Wander Bo-Kaap's candy-coloured streets",
+          "Food market afternoon",
+          "Lion's Head sunset hike"
+        ],
+        "animal": "Dassies (rock hyraxes) sunbathing on the summit rocks",
+        "taste": "Cape Malay curry, samoosas and koeksisters in Bo-Kaap",
+        "tip": "If the 'tablecloth' cloud is down, we swap with Day 4.",
+        "image": "capetown-bo-kaap"
+      },
+      {
+        "n": 3,
+        "title": "Penguins, baboons and the edge of Africa",
+        "base": "Cape Town",
+        "do": [
+          "Dawn sea-kayak to see penguins from the water",
+          "Boulders Beach boardwalk and a swim among the boulders",
+          "Cape of Good Hope: lighthouse and wild fynbos",
+          "Drive Chapman's Peak into the sunset"
+        ],
+        "animal": "Penguins at dawn, then chacma baboons, ostriches and eland roaming the cape",
+        "taste": "Harbour fish and chips by False Bay",
+        "tip": "Baboons open car doors! Windows up, food hidden, watch from a few metres.",
+        "image": "capetown-cape-point-baboons"
+      },
+      {
+        "n": 4,
+        "title": "Seals, gardens and Constantia",
+        "base": "Cape Town",
+        "do": [
+          "Morning seal snorkel off Hout Bay (wetsuit provided)",
+          "Kirstenbosch gardens and the treetop canopy walkway",
+          "Constantia, South Africa's oldest wine route, with a chocolate-and-wine pairing"
+        ],
+        "animal": "Wild seals pirouetting around you underwater, then sunbirds sipping from proteas",
+        "taste": "Vin de Constance, the sweet wine Napoleon asked for in exile",
+        "tip": "We skip the harbour 'seal men' who make seals pose for tips.",
+        "image": "capetown-seal-snorkel"
+      },
+      {
+        "n": 5,
+        "title": "The whale coast",
+        "base": "Hermanus",
+        "do": [
+          "Drive cliff-hugging Clarence Drive along False Bay",
+          "Stony Point: a quiet penguin colony on a boardwalk",
+          "Walk Hermanus' 12 km clifftop path",
+          "Afternoon in the Heaven-and-Earth wine valley"
+        ],
+        "animal": "Penguins and cormorants at Stony Point, maybe a late-season whale close to the cliffs",
+        "taste": "A food-and-wine pairing lunch among Pinot Noir vines",
+        "tip": "Whales are leaving by now, so a sighting is a bonus, not a promise.",
+        "image": "capetown-hermanus-whale"
+      },
+      {
+        "n": 6,
+        "title": "Two oceans and into the Karoo",
+        "base": "Safari reserve",
+        "do": [
+          "Cape Agulhas: Africa's southernmost tip, where two oceans meet",
+          "Lunch in historic Swellendam",
+          "Tradouw Pass gorge onto Route 62",
+          "First game drive at golden hour"
+        ],
+        "animal": "First safari sighting: elephants, giraffes or the white lions",
+        "taste": "Dinner under the stars at the reserve",
+        "tip": "The longest driving day. Early start, full tank.",
+        "image": "capetown-cape-agulhas"
+      },
+      {
+        "n": 7,
+        "title": "Wild Karoo",
+        "base": "Safari reserve",
+        "do": [
+          "Dawn game drive tracking elephants, lions and cheetah",
+          "Guided bush walk to ancient San rock art",
+          "Pool and siesta in the Karoo warmth",
+          "Private sundowner with bubbly on a quiet ridge, then stargazing"
+        ],
+        "animal": "Elephants at a waterhole, the white lion pride, giraffes against the mountains",
+        "taste": "A glass of Robertson Cap Classique as the mountains turn copper",
+        "tip": "The romantic one. A fleece for dawn drives, a hat for midday.",
+        "image": "capetown-sanbona-white-lion",
+        "special": true
+      },
+      {
+        "n": 8,
+        "title": "Route 62 wine road",
+        "base": "Franschhoek",
+        "do": [
+          "Last dawn game drive",
+          "Arty Barrydale and the Montagu hot springs",
+          "Sparkling-wine tasting in the Robertson valley",
+          "Golden hour in Franschhoek's vineyards"
+        ],
+        "animal": "One last safari sighting at dawn",
+        "taste": "Cap Classique bubbles, then dinner in South Africa's gourmet village",
+        "tip": "The driver spits, the birthday girl sips.",
+        "image": null
+      },
+      {
+        "n": 9,
+        "title": "The wine tram",
+        "base": "Franschhoek",
+        "do": [
+          "First wine tram departure, 3–4 estates on one line",
+          "Oyster pairing, chocolate pairing, art-and-garden estates",
+          "Long lazy vineyard lunch and an evening stroll"
+        ],
+        "animal": "One tram line stops at a wine farm with a sanctuary for rescued pigs",
+        "taste": "Oysters with a crisp white, then bubbly",
+        "tip": "Nobody drives today.",
+        "image": "capetown-franschhoek-vineyards"
+      },
+      {
+        "n": 10,
+        "title": "A farewell with a view",
+        "base": "To the airport",
+        "do": [
+          "Drive the Helshoogte Pass through mountain-and-vine panoramas",
+          "Final tasting on a terrace over the Stellenbosch valley",
+          "To the airport"
+        ],
+        "animal": null,
+        "taste": "A last glass with a sculpture-garden view",
+        "tip": "Birthday bonus idea: adopt a penguin through the seabird rescue charity.",
+        "image": "capetown-stellenbosch-winery"
+      }
     ],
     "goodToKnow": [
       "The ocean is cold, around 12–18°C. Swims are short and very refreshing.",
@@ -143,33 +687,192 @@
     "length": "9 days",
     "tagline": "Above the clouds, beside the dolphins",
     "summary": "A green volcanic island in the Atlantic where you can hike ridges above a sea of clouds, walk through fairy-tale laurel forests and swim in black lava pools, all in one day. Wild dolphins play off the south coast, and evenings mean old wine cellars and sunsets over 500 m sea cliffs.",
-    "vibes": ["Above the clouds", "Wild dolphins", "Fairy-tale forests", "Wine & island feasts"],
-    "weather": { "air": "~21–23°C on the coast", "sea": "~21–22°C", "note": "Sunny south, misty north. Shorts below, a fleece for the peaks." },
+    "vibes": [
+      "Above the clouds",
+      "Wild dolphins",
+      "Fairy-tale forests",
+      "Wine & island feasts"
+    ],
+    "weather": {
+      "air": "~21–23°C on the coast",
+      "sea": "~21–22°C",
+      "note": "Sunny south, misty north. Shorts below, a fleece for the peaks."
+    },
     "hero": "madeira-arieiro-sunrise",
-    "wrap": { "paper": "ferns", "base": "#4F7A5E", "ink": "#EAF3E2", "ribbon": "#E9B7B9", "tagHint": "a fairy-tale forest in the clouds" },
+    "wrap": {
+      "paper": "ferns",
+      "base": "#4F7A5E",
+      "ink": "#EAF3E2",
+      "ribbon": "#E9B7B9",
+      "tagHint": "a fairy-tale forest in the clouds"
+    },
     "why": {
       "animals": "Wild Atlantic spotted dolphins and pilot whales live here all year, watched from small naturalist-led boats. Cows wander the misty Fanal forest, and you can snorkel with big groupers in a protected marine reserve.",
       "food": "Centuries-old Madeira wine in Funchal's lodges, beef skewered on laurel sticks in a vineyard with the estate's own Verdelho, and grilled limpets with poncha at sunset.",
       "adventure": "One short coastal road trip packs a summit ridge above the clouds, a canyoning descent through waterfalls, sea kayaking, levada trails into waterfall valleys and hairpin drives down to black-sand coves."
     },
     "highlights": [
-      { "title": "Sunrise above the clouds", "hook": "Watch the sun rise over a white sea of cloud at 1,818 m, then walk a knife-edge ridge to the island's highest peak.", "image": "madeira-arieiro-sunrise" },
-      { "title": "Wild dolphins off Calheta", "hook": "Pods ride the bow, and with luck pilot whales surface right beside the boat.", "image": "madeira-dolphins" },
-      { "title": "The Fanal fog forest", "hook": "500-year-old laurel trees emerge from drifting fog while cows graze between them.", "image": "madeira-fanal-fog-forest" },
-      { "title": "Ponta de São Lourenço", "hook": "A red, ochre and black volcanic peninsula with the Atlantic on both sides. Another planet.", "image": "madeira-sao-lourenco" },
-      { "title": "Lava pools & a vineyard feast", "hook": "Swim in turquoise lava-rock pools, walk black sand, then lunch among the vines.", "image": "madeira-porto-moniz-pools" },
-      { "title": "Glass cable car & wicker toboggan", "hook": "Fly up to Monte over a glass floor, then slide back down in a basket steered by men in straw hats.", "image": "madeira-wine-lodge" }
+      {
+        "title": "Sunrise above the clouds",
+        "hook": "Watch the sun rise over a white sea of cloud at 1,818 m, then walk a knife-edge ridge to the island's highest peak.",
+        "image": "madeira-arieiro-sunrise"
+      },
+      {
+        "title": "Wild dolphins off Calheta",
+        "hook": "Pods ride the bow, and with luck pilot whales surface right beside the boat.",
+        "image": "madeira-dolphins"
+      },
+      {
+        "title": "The Fanal fog forest",
+        "hook": "500-year-old laurel trees emerge from drifting fog while cows graze between them.",
+        "image": "madeira-fanal-fog-forest"
+      },
+      {
+        "title": "Ponta de São Lourenço",
+        "hook": "A red, ochre and black volcanic peninsula with the Atlantic on both sides. Another planet.",
+        "image": "madeira-sao-lourenco"
+      },
+      {
+        "title": "Lava pools & a vineyard feast",
+        "hook": "Swim in turquoise lava-rock pools, walk black sand, then lunch among the vines.",
+        "image": "madeira-porto-moniz-pools"
+      },
+      {
+        "title": "Glass cable car & wicker toboggan",
+        "hook": "Fly up to Monte over a glass floor, then slide back down in a basket steered by men in straw hats.",
+        "image": "madeira-wine-lodge"
+      }
     ],
     "days": [
-      { "n": 1, "title": "Hello, Atlantic", "base": "Funchal", "do": ["Land, grab the car, 20 minutes to Funchal", "Old-town lanes of painted doors", "Seafront sunset"], "animal": null, "taste": "Garlic-butter limpets, bolo do caco and your first poncha", "tip": "Trail slots get booked online in advance. Save the QR codes offline.", "image": null },
-      { "n": 2, "title": "Waterfalls and wicker sleds", "base": "Funchal", "do": ["Beginner canyoning: about 6 waterfalls, abseils and optional jumps", "Glass-floored cable car up to Monte and its tropical gardens", "Toboggan ride back down. Pure giggles."], "animal": "Koi ponds and lizards in the gardens", "taste": "Espetada (beef on laurel skewers) in the village where it was born", "tip": "Canyoning goes early in the trip so there's room to reschedule after rain.", "image": "madeira-wine-lodge" },
-      { "n": 3, "title": "Sunrise above the clouds", "base": "Funchal", "do": ["Drive up in the dark to Pico do Arieiro (1,818 m)", "Sunrise over a sea of clouds", "Hike the ridge to Pico Ruivo (1,862 m): tunnels, stairways, wow", "Lazy afternoon by the pool"], "animal": "Kestrels hovering on the updrafts", "taste": "Hot garlic bread at the summit hut, then scabbardfish with banana", "tip": "It can be 5°C at dawn. Gloves and a down layer.", "image": "madeira-pico-ruivo-ridge" },
-      { "n": 4, "title": "The red-rock peninsula", "base": "Funchal", "do": ["Early cliff walk out to Ponta de São Lourenço", "Whale Museum in Caniçal, where whalers became protectors", "Afternoon on Machico's golden beach"], "animal": "Lizards everywhere, seabirds riding the wind, and the rare chance of a monk seal offshore", "taste": "Fresh tuna steak in a fishing village", "tip": "No shade and strong wind: sun cream plus windbreaker.", "image": "madeira-sao-lourenco" },
-      { "n": 5, "title": "Snorkel, skywalk, westward", "base": "Southwest coast", "do": ["Kayak and snorkel in the Garajau marine reserve", "Step onto the Cabo Girão glass skywalk, 580 m above the sea", "Poncha in the fishing harbour where it was invented", "Golden hour in Calheta"], "animal": "Big groupers and shoals of fish in a no-take reserve", "taste": "Scabbardfish with banana by the harbour", "tip": "Snorkel in the morning, when the sea is calmest.", "image": "madeira-cabo-girao" },
-      { "n": 6, "title": "Dolphins and a lighthouse sunset", "base": "Southwest coast", "do": ["Morning dolphin and whale watching with marine biologists", "Lazy hours on Calheta's sheltered beach", "Sugarcane mill: rum and honey cake", "Sunset picnic at Ponta do Pargo lighthouse, 300 m above the open ocean"], "animal": "Wild dolphins at the bow, maybe pilot whales, from a respectful distance", "taste": "A picnic of bolo do caco, local cheese and chilled Verdelho", "tip": "The romantic one. Stay until the stars come out.", "image": "madeira-dolphins", "special": true },
-      { "n": 7, "title": "Into the fairy forest", "base": "Wild north coast", "do": ["Levada walk to 25 Fontes: a mossy cirque of 25 springs", "Afternoon in the Fanal laurel forest as the fog rolls in", "Hairpins down to the north coast"], "animal": "Cows grazing under ancient laurels, and tame chaffinches on the trail", "taste": "Grilled fish by the sea with a glass of Seixal white", "tip": "Cash and a headlamp for the trail. Don't feed the chaffinches, however cute.", "image": "madeira-fanal-fog-forest" },
-      { "n": 8, "title": "Lava pools and vineyard feast", "base": "Back to Funchal", "do": ["Morning swim in Porto Moniz's volcanic pools as waves crash around you", "Seixal's black-sand beach and the Bride's Veil waterfall", "Vineyard tasting and laurel-skewer lunch above São Vicente"], "animal": "Rock pools full of crabs and little fish", "taste": "The estate's Verdelho and espetada, served right in the vineyard", "tip": "Ask the estate to pack a bottle for the evening.", "image": "madeira-porto-moniz-pools" },
-      { "n": 9, "title": "Market morning", "base": "To the airport", "do": ["Mercado dos Lavradores: exotic fruit and flower sellers in costume", "Last coffee by the marina"], "animal": null, "taste": "Passion fruit tasting and a honey cake to take home", "tip": "Taste before you buy at the fruit stalls.", "image": "madeira-seixal-black-sand" }
+      {
+        "n": 1,
+        "title": "Hello, Atlantic",
+        "base": "Funchal",
+        "do": [
+          "Land, grab the car, 20 minutes to Funchal",
+          "Old-town lanes of painted doors",
+          "Seafront sunset"
+        ],
+        "animal": null,
+        "taste": "Garlic-butter limpets, bolo do caco and your first poncha",
+        "tip": "Trail slots get booked online in advance. Save the QR codes offline.",
+        "image": null
+      },
+      {
+        "n": 2,
+        "title": "Waterfalls and wicker sleds",
+        "base": "Funchal",
+        "do": [
+          "Beginner canyoning: about 6 waterfalls, abseils and optional jumps",
+          "Glass-floored cable car up to Monte and its tropical gardens",
+          "Toboggan ride back down. Pure giggles."
+        ],
+        "animal": "Koi ponds and lizards in the gardens",
+        "taste": "Espetada (beef on laurel skewers) in the village where it was born",
+        "tip": "Canyoning goes early in the trip so there's room to reschedule after rain.",
+        "image": "madeira-wine-lodge"
+      },
+      {
+        "n": 3,
+        "title": "Sunrise above the clouds",
+        "base": "Funchal",
+        "do": [
+          "Drive up in the dark to Pico do Arieiro (1,818 m)",
+          "Sunrise over a sea of clouds",
+          "Hike the ridge to Pico Ruivo (1,862 m): tunnels, stairways, wow",
+          "Lazy afternoon by the pool"
+        ],
+        "animal": "Kestrels hovering on the updrafts",
+        "taste": "Hot garlic bread at the summit hut, then scabbardfish with banana",
+        "tip": "It can be 5°C at dawn. Gloves and a down layer.",
+        "image": "madeira-pico-ruivo-ridge"
+      },
+      {
+        "n": 4,
+        "title": "The red-rock peninsula",
+        "base": "Funchal",
+        "do": [
+          "Early cliff walk out to Ponta de São Lourenço",
+          "Whale Museum in Caniçal, where whalers became protectors",
+          "Afternoon on Machico's golden beach"
+        ],
+        "animal": "Lizards everywhere, seabirds riding the wind, and the rare chance of a monk seal offshore",
+        "taste": "Fresh tuna steak in a fishing village",
+        "tip": "No shade and strong wind: sun cream plus windbreaker.",
+        "image": "madeira-sao-lourenco"
+      },
+      {
+        "n": 5,
+        "title": "Snorkel, skywalk, westward",
+        "base": "Southwest coast",
+        "do": [
+          "Kayak and snorkel in the Garajau marine reserve",
+          "Step onto the Cabo Girão glass skywalk, 580 m above the sea",
+          "Poncha in the fishing harbour where it was invented",
+          "Golden hour in Calheta"
+        ],
+        "animal": "Big groupers and shoals of fish in a no-take reserve",
+        "taste": "Scabbardfish with banana by the harbour",
+        "tip": "Snorkel in the morning, when the sea is calmest.",
+        "image": "madeira-cabo-girao"
+      },
+      {
+        "n": 6,
+        "title": "Dolphins and a lighthouse sunset",
+        "base": "Southwest coast",
+        "do": [
+          "Morning dolphin and whale watching with marine biologists",
+          "Lazy hours on Calheta's sheltered beach",
+          "Sugarcane mill: rum and honey cake",
+          "Sunset picnic at Ponta do Pargo lighthouse, 300 m above the open ocean"
+        ],
+        "animal": "Wild dolphins at the bow, maybe pilot whales, from a respectful distance",
+        "taste": "A picnic of bolo do caco, local cheese and chilled Verdelho",
+        "tip": "The romantic one. Stay until the stars come out.",
+        "image": "madeira-dolphins",
+        "special": true
+      },
+      {
+        "n": 7,
+        "title": "Into the fairy forest",
+        "base": "Wild north coast",
+        "do": [
+          "Levada walk to 25 Fontes: a mossy cirque of 25 springs",
+          "Afternoon in the Fanal laurel forest as the fog rolls in",
+          "Hairpins down to the north coast"
+        ],
+        "animal": "Cows grazing under ancient laurels, and tame chaffinches on the trail",
+        "taste": "Grilled fish by the sea with a glass of Seixal white",
+        "tip": "Cash and a headlamp for the trail. Don't feed the chaffinches, however cute.",
+        "image": "madeira-fanal-fog-forest"
+      },
+      {
+        "n": 8,
+        "title": "Lava pools and vineyard feast",
+        "base": "Back to Funchal",
+        "do": [
+          "Morning swim in Porto Moniz's volcanic pools as waves crash around you",
+          "Seixal's black-sand beach and the Bride's Veil waterfall",
+          "Vineyard tasting and laurel-skewer lunch above São Vicente"
+        ],
+        "animal": "Rock pools full of crabs and little fish",
+        "taste": "The estate's Verdelho and espetada, served right in the vineyard",
+        "tip": "Ask the estate to pack a bottle for the evening.",
+        "image": "madeira-porto-moniz-pools"
+      },
+      {
+        "n": 9,
+        "title": "Market morning",
+        "base": "To the airport",
+        "do": [
+          "Mercado dos Lavradores: exotic fruit and flower sellers in costume",
+          "Last coffee by the marina"
+        ],
+        "animal": null,
+        "taste": "Passion fruit tasting and a honey cake to take home",
+        "tip": "Taste before you buy at the fruit stalls.",
+        "image": "madeira-seixal-black-sand"
+      }
     ],
     "goodToKnow": [
       "Microclimates: the south is sunny, the north and the peaks can be misty. We go high early.",

@@ -167,24 +167,7 @@
   color: var(--accent-deep, var(--rose-deep));
 }
 
-.tl-special {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 10px 3px 8px;
-  border-radius: var(--r-pill);
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 0.8rem;
-  color: var(--plum);
-  background: linear-gradient(135deg, #f6c9d0, #fbdfe3);
-  box-shadow: 0 4px 10px -2px rgba(212, 145, 155, 0.6);
-}
 
-.tl-special .icon {
-  width: 11px;
-  height: 11px;
-}
 
 .tl-title {
   margin-top: 4px;

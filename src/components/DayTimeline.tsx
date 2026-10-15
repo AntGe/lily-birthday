@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import type { RefObject } from "react";
 import type { Day } from "../types";
-import { BulbIcon, GlassIcon, HeartIcon, PawIcon, PinIcon } from "./Icons";
+import { BulbIcon, GlassIcon, PawIcon, PinIcon } from "./Icons";
 import { Photo } from "./Photo";
 import { copy } from "../copy";
 import "./DayTimeline.css";
@@ -32,11 +32,6 @@ export function DayTimeline({ days, scrollRoot, onPhoto }: Props) {
           <div className="tl-content">
             <div className="tl-head">
               <span className="tl-badge">{copy.timeline.day(day.n)}</span>
-              {day.special && (
-                <span className="tl-special">
-                  <HeartIcon /> {copy.timeline.romantic}
-                </span>
-              )}
             </div>
             <h4 className="tl-title display">{day.title}</h4>
             <p className="tl-base">
@@ -55,12 +50,14 @@ export function DayTimeline({ days, scrollRoot, onPhoto }: Props) {
                 </span>
               </p>
             )}
-            <p className="tl-taste">
-              <GlassIcon />
-              <span>
-                <strong>{copy.timeline.taste}</strong> {day.taste}
-              </span>
-            </p>
+            {day.taste && (
+              <p className="tl-taste">
+                <GlassIcon />
+                <span>
+                  <strong>{copy.timeline.taste}</strong> {day.taste}
+                </span>
+              </p>
+            )}
             <p className="tl-tip">
               <BulbIcon />
               <span>{day.tip}</span>

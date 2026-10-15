@@ -124,7 +124,7 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
                     <span className="why-icon">
                       <GlassIcon />
                     </span>
-                    {copy.modal.food}
+                    {copy.modal.food(trip)}
                   </h4>
                   <p>{trip.why.food}</p>
                 </motion.article>

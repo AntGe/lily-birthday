@@ -36,7 +36,8 @@ export const copy = {
     sea: "Море",
     why: "Защо ще се влюбиш",
     animals: "Животни",
-    food: "Храна и вино",
+    /** Palawan's food is all local cuisine, with no wine in it */
+    food: (t: Trip) => (/вин/i.test(t.why.food) ? "Храна и вино" : "Местна кухня"),
     adventure: "Приключения",
     highlights: "Най-хубавото",
     dayByDay: "Ден по ден",
@@ -49,7 +50,6 @@ export const copy = {
 
   timeline: {
     day: (n: number) => `Ден ${n}`,
-    romantic: "романтичният ден",
     animal: "Животинки",
     taste: "Хапки и глътки",
     enlargeDay: (n: number) => `Увеличи снимката към ден ${n}`,
