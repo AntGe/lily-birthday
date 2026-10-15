@@ -32,7 +32,7 @@ function ensureContext(): AudioContext | null {
 export function setSoundEnabled(on: boolean) {
   enabled = on;
   if (on) {
-    ensureContext();
+    // The audio context is only created inside a user gesture (first click), never on page load.
     if (musicWanted) startMusic();
   } else {
     stopMusic();
