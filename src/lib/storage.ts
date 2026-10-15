@@ -43,10 +43,10 @@ export const storage = {
     write("intro", seen ? "1" : null);
   },
   getSound(): boolean {
-    return read("sound") === "on";
+    return read("sound") !== "off";
   },
   setSound(on: boolean) {
-    write("sound", on ? "on" : null);
+    write("sound", on ? "on" : "off");
   },
   resetAll() {
     for (const key of ["opened", "choice", "intro"]) write(key, null);

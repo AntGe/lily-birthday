@@ -11,7 +11,7 @@ import { BIRTHDAY_LINE, GREETING, TAG_LINE } from "./config";
 import { copy } from "./copy";
 import { resetConfetti } from "./lib/confetti";
 import { heroIds, tripById } from "./lib/data";
-import { setSoundEnabled } from "./lib/sound";
+import { preloadMusic, setSoundEnabled, startMusic } from "./lib/sound";
 import { storage } from "./lib/storage";
 import { Choose } from "./scenes/Choose";
 import { Chosen } from "./scenes/Chosen";
@@ -84,6 +84,19 @@ export default function App() {
   }, []);
 
   useEffect(() => setSoundEnabled(sound), [sound]);
+
+  // The song: fetch it once the page has settled, start it on her first click or key press.
+  useEffect(() => {
+    const t = window.setTimeout(preloadMusic, 1200);
+    const start = () => startMusic();
+    window.addEventListener("pointerdown", start, { once: true });
+    window.addEventListener("keydown", start, { once: true });
+    return () => {
+      window.clearTimeout(t);
+      window.removeEventListener("pointerdown", start);
+      window.removeEventListener("keydown", start);
+    };
+  }, []);
 
   useEffect(() => {
     if (!toast) return;
