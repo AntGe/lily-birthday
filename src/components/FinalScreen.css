@@ -1,0 +1,281 @@
+.final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  min-height: 100svh;
+  padding: 88px var(--gutter) 64px;
+}
+
+/* Airmail-striped border in the destination's colours */
+.postcard {
+  position: relative;
+  width: min(980px, 100%);
+  padding: 11px;
+  border-radius: 26px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--accent) 0 14px,
+    #fffdfb 14px 22px,
+    var(--ribbon) 22px 36px,
+    #fffdfb 36px 44px
+  );
+  box-shadow: var(--shadow-xl);
+}
+
+.postcard-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) 30px minmax(0, 1.08fr);
+  border-radius: 18px;
+  background: linear-gradient(170deg, #fffdfb, #fdf5ef);
+  overflow: hidden;
+}
+
+/* ---------- Photo ---------- */
+
+.postcard-photo {
+  position: relative;
+  min-height: 460px;
+}
+
+.postcard-photo .photo {
+  position: absolute;
+  inset: 0;
+}
+
+.postmark {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  z-index: 3;
+  width: 128px;
+  height: 128px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.35));
+}
+
+.postmark svg {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+}
+
+.postmark circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+}
+
+.postmark circle + circle {
+  fill: none;
+  stroke-width: 1.2;
+}
+
+.postmark text {
+  fill: currentColor;
+  font-family: var(--font-body);
+  font-size: 9.6px;
+  font-weight: 750;
+  letter-spacing: 2.4px;
+}
+
+.postmark-heart {
+  position: relative;
+  color: #fff;
+}
+
+.postmark-heart .icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* ---------- Boarding-pass perforation ---------- */
+
+.postcard-divider {
+  position: relative;
+  background: radial-gradient(circle, rgba(200, 164, 106, 0.7) 1.4px, transparent 1.8px) 50% 0 / 4px 12px repeat-y;
+}
+
+.postcard-divider::before,
+.postcard-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: var(--cream);
+  box-shadow: inset 0 0 0 1px rgba(200, 164, 106, 0.4);
+}
+
+.postcard-divider::before {
+  top: -15px;
+}
+
+.postcard-divider::after {
+  bottom: -15px;
+}
+
+/* ---------- Text ---------- */
+
+.postcard-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 44px 44px 40px 18px;
+}
+
+.postcard-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+.postcard-title {
+  margin-top: 12px;
+  font-size: clamp(2rem, 4.2vw, 3.1rem);
+  line-height: 1.06;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.postcard-lead {
+  display: block;
+  font-size: 0.52em;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.postcard-title em {
+  display: block;
+  margin-top: 2px;
+  font-size: 1.4em;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-style: italic;
+  color: var(--accent-deep);
+  text-wrap: balance;
+}
+
+.postcard-note {
+  margin-top: 16px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  color: var(--plum);
+}
+
+.postcard-sign {
+  margin-top: 12px;
+  font-size: 2.3rem;
+  line-height: 1.1;
+  color: var(--rose-deep);
+}
+
+/* ---------- Highlight stamps ---------- */
+
+.stamps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.stamp {
+  padding: 5px;
+  background: radial-gradient(circle at 4px 4px, transparent 2.4px, #fffdfb 2.9px) -4px -4px / 8px 8px;
+  filter: drop-shadow(0 1px 1px rgba(90, 40, 56, 0.18)) drop-shadow(0 3px 6px rgba(90, 40, 56, 0.08));
+}
+
+.stamp:nth-child(odd) {
+  rotate: -1.2deg;
+}
+
+.stamp:nth-child(even) {
+  rotate: 1deg;
+}
+
+.stamp-inner {
+  display: flex;
+  flex-direction: column;
+  width: 128px;
+  min-height: 74px;
+  background: #fffdfb;
+  outline: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  outline-offset: -3px;
+}
+
+.stamp-paper {
+  height: 30px;
+  margin: 4px 4px 0;
+  background: var(--paper);
+}
+
+.stamp-title {
+  padding: 6px 8px 8px;
+  text-wrap: balance;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.74rem;
+  line-height: 1.25;
+  color: var(--plum);
+}
+
+.final-change {
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .final {
+    padding-top: 72px;
+  }
+  .postcard-inner {
+    grid-template-columns: 1fr;
+  }
+  .postcard-photo {
+    min-height: 260px;
+  }
+  .postmark {
+    right: 14px;
+    top: 14px;
+    width: 104px;
+    height: 104px;
+  }
+  .postcard-divider {
+    height: 26px;
+    background: radial-gradient(circle, rgba(200, 164, 106, 0.7) 1.4px, transparent 1.8px) 0 50% / 12px 4px repeat-x;
+  }
+  .postcard-divider::before,
+  .postcard-divider::after {
+    top: 50%;
+    margin-top: -15px;
+    margin-left: 0;
+  }
+  .postcard-divider::before {
+    left: -15px;
+  }
+  .postcard-divider::after {
+    left: auto;
+    right: -15px;
+    bottom: auto;
+  }
+  .postcard-text {
+    padding: 18px 22px 28px;
+  }
+  .stamps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  }
+  .stamp-inner {
+    width: auto;
+  }
+}

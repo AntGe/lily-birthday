@@ -1,0 +1,371 @@
+/*
+  A CSS 3D gift box. Geometry is driven by --w (width), --h (height), --d (depth) and --lid.
+  Safari rule: never put overflow:hidden or filter on anything in the preserve-3d chain.
+*/
+.gb {
+  --W: calc(var(--w) + 2 * var(--e));
+  --D: calc(var(--d) + 2 * var(--e));
+  --ribbon-dark: color-mix(in srgb, var(--ribbon) 74%, #2a1018);
+  --ribbon-light: color-mix(in srgb, var(--ribbon) 55%, #fff);
+  position: relative;
+  width: calc(max(var(--w), var(--d)) * 1.3);
+  height: calc(var(--h) + var(--lid) * 0.3 + var(--bow) * 0.42 + var(--d) * 0.56);
+  perspective: 1500px;
+  perspective-origin: 50% 0%;
+  pointer-events: none;
+}
+
+.gb-shadow {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--d) * 0.06);
+  width: calc((var(--w) + var(--d)) * 0.86);
+  height: calc(var(--d) * 0.5);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    rgba(110, 48, 70, 0.3),
+    rgba(110, 48, 70, 0.14) 55%,
+    rgba(110, 48, 70, 0) 100%
+  );
+}
+
+.gb-body {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--d) * 0.38);
+  width: var(--w);
+  height: var(--h);
+  margin-left: calc(var(--w) / -2);
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+}
+
+.gb-box {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+/* ---------- Walls (each hinged on its bottom edge so it can fold flat) ---------- */
+
+.gb-hinge {
+  position: absolute;
+  top: 0;
+  height: var(--h);
+  transform-style: preserve-3d;
+}
+
+.gb-hinge--front,
+.gb-hinge--back {
+  left: 0;
+  width: var(--w);
+}
+
+.gb-hinge--left,
+.gb-hinge--right {
+  left: calc(50% - var(--d) / 2);
+  width: var(--d);
+}
+
+.gb-hinge--front {
+  transform: translateZ(calc(var(--d) / 2));
+}
+.gb-hinge--back {
+  transform: rotateY(180deg) translateZ(calc(var(--d) / 2));
+}
+.gb-hinge--right {
+  transform: rotateY(90deg) translateZ(calc(var(--w) / 2));
+}
+.gb-hinge--left {
+  transform: rotateY(-90deg) translateZ(calc(var(--w) / 2));
+}
+
+.gb-wall {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+}
+
+.gb-face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.gb-outer,
+.gb-inner {
+  inset: 0;
+}
+
+.gb-inner {
+  transform: rotateY(180deg);
+}
+
+/* Inside walls: darker towards the bottom so the open box reads as a cavity */
+.gb-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(122, 62, 78, 0.1) 0%, rgba(122, 62, 78, 0.22) 55%, rgba(96, 44, 62, 0.38) 100%);
+  transition: opacity 0.8s var(--ease-out);
+}
+
+[data-side="left"] > .gb-inner::after {
+  background: linear-gradient(180deg, rgba(122, 62, 78, 0.18) 0%, rgba(96, 44, 62, 0.46) 100%);
+}
+
+/* Once the walls fold flat they become the floor: lighten them again */
+.gb[data-unfolded="true"] .gb-inner::after {
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(236, 186, 194, 0.55), rgba(212, 145, 155, 0.42));
+}
+
+.gb[data-unfolded="true"] .gb-inner {
+  box-shadow: inset 0 0 0 1.5px rgba(200, 164, 106, 0.7);
+}
+
+/* Top edge of each wall catches light */
+.gb-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Contact shadow under the lid skirt */
+.gb-outer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: calc(var(--lid) * 1.05);
+  background: linear-gradient(180deg, rgba(58, 30, 42, 0.32), rgba(58, 30, 42, 0) 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.gb-bottom {
+  left: 0;
+  top: calc(50% - var(--d) / 2);
+  width: var(--w);
+  height: var(--d);
+  transform: rotateX(90deg) translateZ(calc(var(--h) / -2));
+}
+
+.gb-glow {
+  position: absolute;
+  inset: -20%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 244, 214, 0.95), rgba(255, 226, 170, 0.45) 45%, rgba(255, 226, 170, 0) 75%);
+  opacity: 0;
+}
+
+/* ---------- Lid ---------- */
+
+.gb-lid-anchor {
+  position: absolute;
+  left: calc(50% - var(--W) / 2);
+  top: calc(50% - var(--lid) / 2);
+  width: var(--W);
+  height: var(--lid);
+  transform-style: preserve-3d;
+  transform: translateY(calc(var(--h) * -0.5 + var(--lid) * 0.2));
+}
+
+.gb-lid {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.gb-lid-top {
+  left: 0;
+  top: calc(50% - var(--D) / 2);
+  width: var(--W);
+  height: var(--D);
+  transform: rotateX(90deg) translateZ(calc(var(--lid) / 2));
+}
+
+.gb-skirt {
+  top: 0;
+  height: var(--lid);
+}
+
+.gb-skirt--front,
+.gb-skirt--back {
+  left: 0;
+  width: var(--W);
+}
+
+.gb-skirt--left,
+.gb-skirt--right {
+  left: calc(50% - var(--D) / 2);
+  width: var(--D);
+}
+
+.gb-skirt--front {
+  transform: translateZ(calc(var(--D) / 2));
+}
+.gb-skirt--back {
+  transform: rotateY(180deg) translateZ(calc(var(--D) / 2));
+}
+.gb-skirt--right {
+  transform: rotateY(90deg) translateZ(calc(var(--W) / 2));
+}
+.gb-skirt--left {
+  transform: rotateY(-90deg) translateZ(calc(var(--W) / 2));
+}
+
+/* Bottom hem of the lid catches a little light */
+.gb-skirt::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.gb-bow-plane {
+  position: absolute;
+  width: var(--bow);
+  height: calc(var(--bow) * 0.56);
+  left: calc(50% - var(--bow) / 2);
+  top: calc(50% - var(--lid) / 2 - var(--bow) * 0.56 + var(--bow) * 0.06);
+  transform-origin: 50% 62%;
+}
+
+.gb-bow-plane .bow {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 3px 2px rgba(80, 30, 46, 0.22));
+}
+
+/* ---------- Ribbons (satin bands) ---------- */
+
+.gb-band {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.gb-band--v,
+.gb-band--z {
+  top: 0;
+  bottom: 0;
+  left: calc(50% - var(--band) / 2);
+  width: var(--band);
+  background: linear-gradient(
+    90deg,
+    var(--ribbon-dark) 0%,
+    var(--ribbon) 16%,
+    var(--ribbon-light) 44%,
+    var(--ribbon) 64%,
+    var(--ribbon-dark) 100%
+  );
+  box-shadow: 0 0 0 0.5px rgba(58, 30, 42, 0.12);
+}
+
+.gb-band--v {
+  transform-origin: 50% 0%;
+}
+
+.gb-band--z {
+  transform-origin: 50% 50%;
+}
+
+.gb-band--x {
+  left: 0;
+  right: 0;
+  top: calc(50% - var(--band) / 2);
+  height: var(--band);
+  transform-origin: 50% 50%;
+  background: linear-gradient(
+    180deg,
+    var(--ribbon-dark) 0%,
+    var(--ribbon) 16%,
+    var(--ribbon-light) 44%,
+    var(--ribbon) 64%,
+    var(--ribbon-dark) 100%
+  );
+  box-shadow: 0 0 0 0.5px rgba(58, 30, 42, 0.12);
+}
+
+/* ---------- Light & shade per side (light comes from the upper left) ---------- */
+
+.gb-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+[data-side="front"] > .gb-outer > .gb-shade {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(58, 30, 42, 0.08));
+}
+[data-side="right"] > .gb-outer > .gb-shade {
+  background: linear-gradient(180deg, rgba(58, 30, 42, 0.2), rgba(58, 30, 42, 0.3));
+}
+[data-side="left"] > .gb-outer > .gb-shade {
+  background: rgba(58, 30, 42, 0.16);
+}
+[data-side="back"] > .gb-outer > .gb-shade {
+  background: rgba(58, 30, 42, 0.24);
+}
+.gb-lid-top > .gb-shade {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 65%);
+}
+.gb-skirt--front > .gb-shade {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(58, 30, 42, 0.04));
+}
+.gb-skirt--right > .gb-shade {
+  background: rgba(58, 30, 42, 0.22);
+}
+.gb-skirt--left > .gb-shade,
+.gb-skirt--back > .gb-shade {
+  background: rgba(58, 30, 42, 0.2);
+}
+
+/* ---------- Tearable front paper ---------- */
+
+.gb-under {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.gb-under::after {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  border: 1px solid rgba(200, 164, 106, 0.55);
+  border-radius: 4px;
+}
+
+.gb-emboss {
+  font-family: var(--font-display);
+  font-size: calc(var(--w) * 0.26);
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.75;
+}
+
+.gb-tear {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.gb-scrap {
+  position: absolute;
+  z-index: 1;
+  width: 10px;
+  height: 8px;
+  opacity: 0;
+  clip-path: polygon(0 20%, 40% 0, 100% 30%, 80% 100%, 20% 85%);
+}

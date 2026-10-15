@@ -1,0 +1,53 @@
+.photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--blush);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Soften the 24px blur-up placeholder */
+.photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  filter: blur(14px) saturate(1.1);
+  transform: scale(1.15);
+  transition: opacity 0.6s var(--ease-out);
+}
+
+.photo[data-loaded="true"]::before {
+  opacity: 0;
+}
+
+.photo picture,
+.photo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.photo img {
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s var(--ease-out), transform 1.4s var(--ease-out);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.photo[data-loaded="true"] img {
+  opacity: 1;
+}
+
+.photo--intrinsic {
+  height: auto;
+}
+
+.photo--missing {
+  background: linear-gradient(135deg, var(--blush), var(--cream-deep));
+}

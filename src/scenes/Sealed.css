@@ -1,0 +1,181 @@
+.overture {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 64px var(--gutter) 40px;
+  overflow: hidden;
+}
+
+.overture--intro {
+  cursor: pointer;
+}
+
+.ov-top {
+  position: absolute;
+  top: clamp(36px, 7vh, 88px);
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.ov-bottom {
+  position: absolute;
+  bottom: clamp(28px, 7vh, 80px);
+  left: var(--gutter);
+  right: var(--gutter);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.ov-floor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --s: 1;
+}
+
+.ov-box {
+  position: relative;
+  z-index: 1;
+  border-radius: 48px;
+  scale: var(--s);
+}
+
+.ov-box:focus-visible {
+  outline-offset: -12px;
+}
+
+.ov-bob {
+  position: relative;
+  display: block;
+  animation: ov-bob 3.8s var(--ease-in-out) infinite alternate;
+}
+
+.overture--intro .ov-bob {
+  animation-play-state: paused;
+}
+
+@keyframes ov-bob {
+  from {
+    transform: translateY(4px);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+.overture--sealed .ov-box:hover .bow {
+  animation: bow-wiggle 0.8s var(--ease-in-out);
+  transform-origin: 50% 62%;
+}
+
+.ov-heart {
+  color: var(--rose);
+  font-style: normal;
+}
+
+.ov-hint {
+  /* the box is scaled with `scale`, which doesn't shrink its layout box */
+  margin-top: calc(6px - (1 - var(--s)) * 300px);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  animation: hint-pulse 2.2s var(--ease-in-out) infinite;
+}
+
+.overture--intro .ov-hint {
+  animation: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+}
+
+@keyframes hint-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Light bursting out of the open box */
+.ov-bloom {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  z-index: 0;
+  width: 1100px;
+  height: 1100px;
+  margin: -550px 0 0 -550px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 249, 232, 1) 0%,
+    rgba(255, 236, 200, 0.6) 30%,
+    rgba(250, 214, 208, 0.25) 55%,
+    rgba(250, 214, 208, 0) 72%
+  );
+}
+
+.ov-rays {
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(255, 238, 200, 0.55) 0deg 5deg,
+    rgba(255, 238, 200, 0) 5deg 15deg
+  );
+  -webkit-mask: radial-gradient(closest-side, #000 12%, rgba(0, 0, 0, 0.5) 40%, transparent 72%);
+  mask: radial-gradient(closest-side, #000 12%, rgba(0, 0, 0, 0.5) 40%, transparent 72%);
+  animation: rays-spin 60s linear infinite;
+}
+
+@keyframes rays-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .ov-floor {
+    --s: 0.78;
+  }
+}
+
+@media (max-width: 440px) {
+  .ov-floor {
+    --s: 0.62;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 701px) {
+  .ov-floor {
+    --s: 0.86;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ov-bob,
+  .ov-hint,
+  .ov-rays {
+    animation: none;
+  }
+  .ov-hint {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,174 @@
+.slot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.slot-stage {
+  position: relative;
+  width: 100%;
+  max-width: var(--card-w);
+  height: var(--stage-h, 500px);
+}
+
+.card-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  transform-origin: 50% 100%;
+}
+
+/* ---------- The wrapped present ---------- */
+
+.present {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  translate: -50% 0;
+  border-radius: 24px;
+}
+
+.present:focus-visible {
+  outline-offset: -8px;
+}
+
+.present[aria-disabled="true"]:focus-visible {
+  outline-color: transparent;
+}
+
+.present-bob {
+  position: relative;
+  display: block;
+  transition: translate 0.45s var(--ease-spring);
+  animation: present-bob 3.4s var(--ease-in-out) infinite alternate;
+  animation-delay: calc(var(--i) * -0.85s);
+}
+
+@keyframes present-bob {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-9px);
+  }
+}
+
+.present[aria-disabled="true"] {
+  cursor: default;
+}
+
+.present[aria-disabled="true"] .present-bob {
+  animation-play-state: paused;
+}
+
+/* The bow wiggles on hover */
+.present .gb-bow-plane .bow {
+  transform-origin: 50% 62%;
+}
+
+.present:not([aria-disabled="true"]):hover .present-bob {
+  translate: 0 -6px;
+}
+
+.present:not([aria-disabled="true"]):hover .gb-bow-plane .bow {
+  animation: bow-wiggle 0.7s var(--ease-in-out);
+}
+
+@keyframes bow-wiggle {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-7deg) scale(1.04);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Faint sparkles on hover */
+.present-sparkles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.present-sparkles i {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  opacity: 0;
+  background: radial-gradient(closest-side, #fff, rgba(255, 236, 196, 0.9) 30%, rgba(200, 164, 106, 0));
+  clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%);
+  transform: scale(0.3);
+  transition: opacity 0.3s, transform 0.5s var(--ease-spring);
+}
+
+.present-sparkles i:nth-child(1) {
+  left: 12%;
+  top: 22%;
+}
+.present-sparkles i:nth-child(2) {
+  right: 10%;
+  top: 8%;
+  width: 18px;
+  height: 18px;
+  transition-delay: 0.08s;
+}
+.present-sparkles i:nth-child(3) {
+  right: 22%;
+  bottom: 30%;
+  width: 10px;
+  height: 10px;
+  transition-delay: 0.16s;
+}
+
+.present:not([aria-disabled="true"]):hover .present-sparkles i {
+  opacity: 1;
+  transform: scale(1) rotate(20deg);
+}
+
+/* ---------- Choose button ---------- */
+
+.slot-cta {
+  display: flex;
+  justify-content: center;
+  min-height: 52px;
+  margin-top: 14px;
+}
+
+/* A boutique outline in the destination colour that fills on hover, not four pricing-table pills */
+.choose-btn {
+  --btn-bg: var(--white);
+  --btn-ink: var(--btn);
+  min-height: 46px;
+  padding: 0.55em 1.35em;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.06rem;
+  letter-spacing: 0;
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--btn) 50%, transparent), var(--shadow-sm);
+  transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out),
+    transform 0.35s var(--ease-spring), box-shadow 0.35s var(--ease-out);
+}
+
+.slot:has(.dcard:hover) .choose-btn,
+.choose-btn:hover,
+.choose-btn:focus-visible {
+  --btn-bg: var(--btn);
+  --btn-ink: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .present-bob {
+    animation: none;
+  }
+}

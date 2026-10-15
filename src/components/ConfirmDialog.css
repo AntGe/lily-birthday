@@ -1,0 +1,100 @@
+.confirm-card {
+  position: relative;
+  width: min(420px, calc(100vw - 32px));
+  padding: 64px 30px 28px;
+  margin-top: 56px;
+  border-radius: var(--r-sheet);
+  text-align: center;
+  background: var(--white);
+  box-shadow: 0 0 0 1px rgba(200, 164, 106, 0.4), var(--shadow-xl);
+}
+
+.confirm-strip {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 28px;
+  -webkit-mask: linear-gradient(#000 0 14px, transparent 14px);
+  mask: linear-gradient(#000 0 14px, transparent 14px);
+  border-radius: var(--r-sheet) var(--r-sheet) 0 0;
+  background: var(--paper);
+  opacity: 0.95;
+}
+
+.confirm-photo {
+  position: absolute;
+  left: 50%;
+  top: -52px;
+  width: 104px;
+  height: 104px;
+  margin-left: -52px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 4px var(--white), 0 0 0 5.5px var(--gold), var(--shadow-lg);
+}
+
+.confirm-heart {
+  position: absolute;
+  left: calc(50% + 26px);
+  top: 26px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--rose);
+  box-shadow: 0 0 0 3px var(--white), 0 4px 10px rgba(184, 111, 124, 0.5);
+  animation: heart-beat 1.4s var(--ease-in-out) infinite;
+}
+
+.confirm-heart .icon {
+  width: 14px;
+  height: 14px;
+}
+
+@keyframes heart-beat {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.18);
+  }
+  35% {
+    transform: scale(0.96);
+  }
+}
+
+.confirm-title {
+  font-size: 2.1rem;
+  line-height: 1.12;
+  font-weight: 400;
+}
+
+.confirm-title .icon {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.12em;
+  vertical-align: 0.02em;
+  color: var(--rose);
+}
+
+.confirm-title em {
+  font-style: italic;
+  color: var(--rose-deep);
+}
+
+.confirm-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.confirm-yes {
+  --btn-bg: var(--btn);
+  min-height: 54px;
+  font-size: 1.02rem;
+}

@@ -1,0 +1,118 @@
+.tag {
+  position: absolute;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.tag-swing {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  animation: tag-sway 3.6s var(--ease-in-out) infinite alternate;
+  animation-delay: var(--sway-delay, 0s);
+}
+
+@keyframes tag-sway {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(4deg);
+  }
+}
+
+.tag-string {
+  position: absolute;
+  max-width: none;
+  left: -1px;
+  top: -1px;
+  width: 34px;
+  height: 46px;
+  overflow: visible;
+}
+
+.tag-string path {
+  fill: none;
+  stroke: var(--gold-deep);
+  stroke-width: 1.4;
+  vector-effect: non-scaling-stroke;
+}
+
+/* The string ends at (34, 46); the card hangs from its hole there. */
+.tag-card {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  width: 128px;
+  padding: 18px 12px 11px 14px;
+  transform: rotate(-10deg);
+  transform-origin: 14px 6px;
+  background: linear-gradient(160deg, #fffdf9, #fbf1e8);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 6px 14px -4px rgba(90, 40, 56, 0.28),
+    0 1px 2px rgba(90, 40, 56, 0.15);
+}
+
+.tag-card::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(200, 164, 106, 0.55);
+  border-radius: 2px 7px 7px 2px;
+}
+
+.tag-hole {
+  position: absolute;
+  left: 11px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cream-deep);
+  box-shadow: inset 0 1px 2px rgba(90, 40, 56, 0.35), 0 0 0 1.5px rgba(200, 164, 106, 0.8);
+}
+
+.tag-text {
+  position: relative;
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.25;
+  color: var(--plum);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.tag--lg .tag-string {
+  width: 46px;
+  height: 64px;
+}
+
+.tag--lg .tag-card {
+  left: 31px;
+  top: 57px;
+  width: 172px;
+  padding: 24px 16px 14px;
+  transform-origin: 15px 7px;
+}
+
+.tag--lg .tag-hole {
+  left: 12px;
+  top: 4px;
+}
+
+.tag--lg .tag-text {
+  font-size: 21px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tag-swing {
+    animation: none;
+    transform: rotate(-2deg);
+  }
+}

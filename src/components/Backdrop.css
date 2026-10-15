@@ -1,0 +1,133 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(160deg, #fffaf6 0%, var(--cream) 35%, #fbeae6 70%, var(--blush) 100%);
+}
+
+/* Big soft light blobs that drift slowly. Only transform is animated. */
+.backdrop-blob {
+  position: absolute;
+  width: 70vmax;
+  height: 70vmax;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.backdrop-blob--a {
+  left: -20vmax;
+  top: -25vmax;
+  background: radial-gradient(closest-side, rgba(244, 220, 221, 0.9), rgba(244, 220, 221, 0));
+  animation: blob-a 34s var(--ease-in-out) infinite alternate;
+}
+
+.backdrop-blob--b {
+  right: -25vmax;
+  top: 10vh;
+  background: radial-gradient(closest-side, rgba(232, 211, 166, 0.42), rgba(232, 211, 166, 0));
+  animation: blob-b 41s var(--ease-in-out) infinite alternate;
+}
+
+.backdrop-blob--c {
+  left: 10vw;
+  bottom: -40vmax;
+  background: radial-gradient(closest-side, rgba(212, 145, 155, 0.32), rgba(212, 145, 155, 0));
+  animation: blob-c 38s var(--ease-in-out) infinite alternate;
+}
+
+/* Destination tint on the final screen */
+.backdrop-tint {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 90% at 50% 100%, var(--tint, transparent), transparent 70%);
+  opacity: 0.2;
+  transition: opacity 1.2s var(--ease-out);
+}
+
+@keyframes blob-a {
+  to {
+    transform: translate3d(14vw, 10vh, 0) scale(1.15);
+  }
+}
+@keyframes blob-b {
+  to {
+    transform: translate3d(-16vw, 18vh, 0) scale(0.9);
+  }
+}
+@keyframes blob-c {
+  to {
+    transform: translate3d(12vw, -14vh, 0) scale(1.1);
+  }
+}
+
+.backdrop-bokeh,
+.backdrop-spark {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.backdrop-bokeh {
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.85), rgba(255, 240, 238, 0.35) 60%, rgba(255, 240, 238, 0));
+  animation: bokeh-float linear infinite;
+}
+
+.backdrop-spark {
+  background: radial-gradient(closest-side, #fff7e4, rgba(232, 211, 166, 0.85) 35%, rgba(200, 164, 106, 0));
+  animation: spark-twinkle ease-in-out infinite;
+}
+
+@keyframes bokeh-float {
+  0% {
+    transform: translate3d(0, 40px, 0) scale(0.9);
+    opacity: 0;
+  }
+  20% {
+    opacity: var(--o);
+  }
+  80% {
+    opacity: var(--o);
+  }
+  100% {
+    transform: translate3d(20px, var(--drift), 0) scale(1.05);
+    opacity: 0;
+  }
+}
+
+@keyframes spark-twinkle {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(0.4);
+    opacity: 0;
+  }
+  45% {
+    transform: translate3d(0, calc(var(--drift) * 0.3), 0) scale(1);
+    opacity: var(--o);
+  }
+  60% {
+    opacity: calc(var(--o) * 0.4);
+  }
+}
+
+/* Paper grain (SVG feTurbulence) at ~4% */
+.backdrop-grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.045;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .23 0 0 0 0 .15 0 0 0 0 .19 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop-blob,
+  .backdrop-bokeh,
+  .backdrop-spark {
+    animation: none;
+  }
+  .backdrop-bokeh {
+    opacity: calc(var(--o) * 0.7);
+  }
+}

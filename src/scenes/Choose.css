@@ -1,0 +1,238 @@
+.choose {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100svh;
+  padding: clamp(32px, 5vh, 64px) var(--gutter) 16px;
+}
+
+/* ---------- Heading ---------- */
+
+.choose-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 760px;
+}
+
+.choose-title {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1;
+  font-weight: 380;
+  letter-spacing: -0.02em;
+}
+
+.choose-sub {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.02rem, 1.8vw, 1.2rem);
+  color: var(--ink-soft);
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.progress-line {
+  position: relative;
+  width: 132px;
+  height: 2px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--gold) 28%, transparent);
+}
+
+.progress-fill {
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  background: var(--gold);
+  transform-origin: 0 50%;
+  transition: transform 0.8s var(--ease-out);
+}
+
+.progress-node {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+  border-radius: 50%;
+  background: var(--cream);
+  box-shadow: 0 0 0 1.5px var(--gold);
+  transition: background 0.4s, transform 0.5s var(--ease-spring);
+}
+
+.progress-node.is-on {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 1.5px var(--white), 0 0 0 3px var(--gold);
+}
+
+.progress-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.progress-text {
+  min-width: 150px;
+  text-align: left;
+}
+
+.choose-all {
+  font-style: italic;
+  font-size: 1.12rem;
+  line-height: 1.2;
+  color: #9b4a5a;
+  white-space: nowrap;
+}
+
+/* ---------- Stage ---------- */
+
+.choose-stage {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: clamp(14px, 3vh, 34px);
+}
+
+/* The unfolded wrapping paper the presents sit on */
+.choose-floor {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  top: calc(var(--stage-h, 500px) - 70px);
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(236, 198, 201, 0.55), rgba(244, 220, 221, 0.25) 60%, rgba(244, 220, 221, 0) 100%);
+  pointer-events: none;
+}
+
+.choose-grid {
+  --stage-h: 500px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 32px);
+  align-items: start;
+}
+
+.choose-stage {
+  --stage-h: 500px;
+}
+
+.choose-cell {
+  position: relative;
+  min-width: 0;
+}
+
+.choose-foot {
+  margin-top: auto;
+  padding-top: 8px;
+  text-align: center;
+}
+
+/* On laptops the credits link sits quietly in the top-left corner instead of adding height */
+@media (min-width: 1080px) {
+  .choose-foot {
+    position: absolute;
+    top: max(18px, env(safe-area-inset-top));
+    left: max(22px, env(safe-area-inset-left));
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1080px) and (max-height: 860px) {
+  .choose {
+    padding-top: 22px;
+  }
+  .choose-title {
+    font-size: clamp(2.2rem, 4vw, 2.9rem);
+  }
+  .choose-sub {
+    margin-top: 8px;
+  }
+  .progress {
+    margin-top: 12px;
+  }
+  .choose-grid,
+  .choose-stage {
+    --stage-h: 452px;
+  }
+  .dcard-photo {
+    height: 186px;
+  }
+  .dcard-hint {
+    top: 150px;
+  }
+  .dcard-summary {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+}
+
+@media (min-width: 1080px) and (max-height: 740px) {
+  .choose-grid,
+  .choose-stage {
+    --stage-h: 420px;
+  }
+  .dcard-photo {
+    height: 160px;
+  }
+  .dcard-hint {
+    top: 124px;
+  }
+  .dcard-tagline {
+    font-size: 0.95rem;
+  }
+}
+
+/* Laptops narrower than ~1240px: slightly smaller cards */
+@media (max-width: 1240px) and (min-width: 1080px) {
+  .choose-grid,
+  .choose-stage {
+    --stage-h: 474px;
+  }
+}
+
+/* 2 × 2 */
+@media (max-width: 1079px) {
+  .choose-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 720px;
+    margin-inline: auto;
+    row-gap: 40px;
+  }
+  .choose-floor {
+    display: none;
+  }
+}
+
+/* 1 column */
+@media (max-width: 560px) {
+  .progress {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .progress-text {
+    min-width: 0;
+    text-align: center;
+  }
+  .choose-all {
+    white-space: normal;
+    text-wrap: balance;
+  }
+  .choose-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+}

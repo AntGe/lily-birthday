@@ -1,0 +1,319 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 8px 0 4px;
+}
+
+/* The spine */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb, var(--gold) 70%, transparent) 4%,
+    color-mix(in srgb, var(--gold) 70%, transparent) 96%,
+    transparent
+  );
+}
+
+.tl-day {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 64px 1fr;
+  align-items: start;
+}
+
+.tl-node {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-top: 2px;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--plum);
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--gold), 0 0 0 6px var(--cream), var(--shadow-sm);
+}
+
+.tl-day--special .tl-node {
+  color: #fff;
+  background: var(--rose);
+  box-shadow: 0 0 0 2px var(--rose), 0 0 0 6px var(--cream), 0 6px 18px rgba(212, 145, 155, 0.5);
+}
+
+.tl-content {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 18px 20px 18px 22px;
+  border-radius: 20px;
+  background: rgba(255, 253, 251, 0.75);
+  box-shadow: var(--shadow-sm);
+}
+
+.tl-day--special .tl-content {
+  background: linear-gradient(160deg, #fff, #fdf0f0);
+  box-shadow: 0 0 0 1px rgba(212, 145, 155, 0.35), var(--shadow-md);
+}
+
+.tl-photo {
+  grid-column: 3;
+  grid-row: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.5s var(--ease-out), box-shadow 0.5s var(--ease-out);
+}
+
+.tl-photo:hover {
+  transform: translateY(-3px) rotate(-0.4deg);
+  box-shadow: var(--shadow-lg);
+}
+
+.tl-photo .photo img {
+  transition: opacity 0.6s var(--ease-out), transform 2.4s var(--ease-out);
+}
+
+.tl-photo:hover .photo img {
+  transform: scale(1.04);
+}
+
+/* Days without a photo: a travel-journal label of where we are, instead of an empty half */
+.tl-aside {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 8px 0 22px;
+}
+
+.tl-day--flip .tl-aside {
+  grid-column: 1;
+  align-items: flex-end;
+  text-align: right;
+  padding: 0 22px 0 8px;
+}
+
+.tl-aside-day {
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+.tl-aside-place {
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  font-style: italic;
+  font-weight: 350;
+  line-height: 1.1;
+  color: color-mix(in srgb, var(--accent-deep, var(--plum)) 70%, transparent);
+  text-wrap: balance;
+}
+
+.tl-aside-place::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 1px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.tl-day--flip .tl-aside-place::after {
+  margin-left: auto;
+  background: linear-gradient(270deg, var(--gold), transparent);
+}
+
+.tl-day--flip .tl-content {
+  grid-column: 3;
+}
+
+.tl-day--flip .tl-photo {
+  grid-column: 1;
+}
+
+.tl-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.tl-badge {
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-deep, var(--rose-deep));
+}
+
+.tl-special {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px 3px 8px;
+  border-radius: var(--r-pill);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--plum);
+  background: linear-gradient(135deg, #f6c9d0, #fbdfe3);
+  box-shadow: 0 4px 10px -2px rgba(212, 145, 155, 0.6);
+}
+
+.tl-special .icon {
+  width: 11px;
+  height: 11px;
+}
+
+.tl-title {
+  margin-top: 4px;
+  text-wrap: balance;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  font-weight: 450;
+}
+
+.tl-base {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.tl-base .icon {
+  width: 14px;
+  height: 14px;
+  color: var(--gold-deep);
+}
+
+.tl-do {
+  display: grid;
+  gap: 5px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.tl-do li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.tl-do li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.tl-animal,
+.tl-taste,
+.tl-tip {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 10px;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.tl-animal .icon,
+.tl-taste .icon,
+.tl-tip .icon {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}
+
+.tl-animal {
+  margin-top: 14px;
+  padding: 9px 13px 9px 11px;
+  border-radius: 16px;
+  color: #7a3646;
+  background: linear-gradient(135deg, #fde8ea, #fbdfe3);
+  box-shadow: inset 0 0 0 1px rgba(212, 145, 155, 0.35);
+}
+
+.tl-animal .icon {
+  color: var(--rose-deep);
+}
+
+.tl-animal strong,
+.tl-taste strong {
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+.tl-taste .icon {
+  color: #9b4a5a;
+}
+
+.tl-tip {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.tl-tip .icon {
+  width: 14px;
+  height: 14px;
+  color: var(--gold);
+}
+
+@media (max-width: 760px) {
+  .timeline::before {
+    left: 19px;
+  }
+  .tl-day,
+  .tl-day--flip {
+    grid-template-columns: 40px 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+  }
+  .tl-node {
+    grid-column: 1;
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+  .tl-content,
+  .tl-day--flip .tl-content {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 14px 15px;
+  }
+  .tl-photo,
+  .tl-day--flip .tl-photo {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .tl-aside {
+    display: none;
+  }
+}

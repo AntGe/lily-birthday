@@ -1,0 +1,497 @@
+{
+  "palawan-pinagbuyutan": {
+    "ratio": 1.3333,
+    "w": 3200,
+    "h": 2400,
+    "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAAAQBgCdASoYABIAPu1osFAppaSiqAqpMB2JbACdMzQ2iN+1kBqp2KpqzulJY8nXcTa15bsMUNMV1AAA/s2CprXUe2BX7XFjllqmkYylI51YzjrHlI8lQCHhgsmDK7cDaCR7ABytplgseb1waaOLTCDW6GQyhzDcOoLKkuIoxZrWmkKywYwQVf3LARniHu18QEs8Jq0s/fKLLskycUk6Cv7WKzMjSCT2tImOyAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-big-lagoon-kayak": {
+    "ratio": 1.3333,
+    "w": 2400,
+    "h": 1800,
+    "blur": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAABwBQCdASoYABIAPu1ur1IppiQiqAgBMB2JbACdMtDBtt7+ikJLV4su9uAKwpFJw1YLmloAAP7d9DbGDGudutt8oLPxCgCvwnwsrcbtFOl2yIvL85XrS0lqp723cCjVa9djwkORLnAnbxlt/FdD3ROQ70WOKq7QNOw4clcMs74E+zAuGL0nQ12wJXUwbDj8VxnSrAmZILXnklqYugNi6BHwn+VJoWFXfmRS499eKK9aZwNH1/+RqlfFfX/5EwbyfLfnypPXAAA=",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-kayangan-lake": {
+    "ratio": 1.3333,
+    "w": 3840,
+    "h": 2880,
+    "blur": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAAAQBQCdASoYABIAPu1qrVCppaQiqAqpMB2JYwDMHA9ew86peZhgesqoCqGiMmdnPMAAAP7zfyehIidd2Hy9Lesby1XfCK6QLCgG3oLV+eytot54VjTeOLYO/zpUmEFc5yb7D+leJlbP6AzV03D9NMbNrQXOHhWV4iTvN51sBWFcdbDOGL7LQuW9AsMAT52bZG4RgZNfnCBrobLKO1Tj9BI3+85C3ueMLmU8N13h2iIKCyHyUIINFLHR2IAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-turtle": {
+    "ratio": 1.3335,
+    "w": 3367,
+    "h": 2525,
+    "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACQBQCdASoYABIAPu1qqk8ppiOiMBgIATAdiWQArDN2xQAVI85XrUAwU5OvkTNx5U3zVmq8AAD+nJh2bge4ygBLMYwrH2HAzHcz96/8fxusQaGqQiI++vomPpD/m4nXGWgzUAYCpdzvTturSSpl9X92+2iRZwGFjp3CtvKQAvrYAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-dugong": {
+    "ratio": 1.3333,
+    "w": 2400,
+    "h": 1800,
+    "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwBACdASoYABIAPu1qrVCppaQiqAqpMB2JQBYj4TgmG+AAnLJW4+2tcJo4UfcADtgA/nQAV2WYGVohaehTap3NvtojneW5lbFUqc1Ui18gfh2b3i1EpOdXEDoTiOSgKtHCWCF7Hwn9wB+wqPjxtmNomA2FeHFKSFJjAmNuVmlEkimfsCR9CHJ0c/dzvlGupaLNDFSkih8Ie3iSN5KJwAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-calauit-giraffes": {
+    "ratio": 1.5094,
+    "w": 3840,
+    "h": 2544,
+    "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JbACdL11s/wHO3S1eo7OoLcSAw4AA97f3Y8YjZhkdpow673/uLyhxet7iboUAp+WJCZhkSC/7jTxfpUiYohh+QFq0Ps/cpitK2RhonYhKNoHPw2Waa++zgcd3Qjo0tgo3trJTXlQEwxk20P+tZ3Jm2sEiFY+K3CpbGne/jpy6WPTNzMqgAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-nacpan-sunset": {
+    "ratio": 0.8,
+    "w": 2400,
+    "h": 3000,
+    "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABwBQCdASoYAB4APu1kqU2ppaQiMAgBMB2JZgC1GvTT9AuTYaDd+MnJT6U27uudRI1NjeTAAP5xYKEPqqfPfS11N16xqqvJ0ZB5vOTPbLsVCdPyLg1aTPQ27dmLfAgijDcqJVQ2by6KQTS2dfoUnxhbtokELGHEddjUJjGArWF/yubQuhe1riL/r7GZP3lfpNs7cwWDbpQLnVxZJ2PqAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-snake-island": {
+    "ratio": 1.3333,
+    "w": 3840,
+    "h": 2880,
+    "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwBACdASoYABIAPuFgpU2opaOiN/VYARAcCWcAwoAQ4u9G8znlp0+Iv8ARBdYAAP7OAGdQQenpJzbYyk5nriBlNgd32AeP6om5T48hJXLiLakU8k+m0V2uO2OBDj3MZz0or+K7vcc+tDFbDzgKz4AA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-maquinit-hot-spring": {
+    "ratio": 1.7778,
+    "w": 3264,
+    "h": 1836,
+    "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQAwCdASoYAA0APu1iqU2ppaQiMAgBMB2JZgCdABFDS1jG3wQ4i4AA/a4zG7ytqQEvVeT03sMgM95+hixpUHNHMv7Sbdog/A0ooofj4nmgnLdxdW/MsWjz8GVAGckvZBMxOLFNoGPmrSy5xZKhs1BGw7MG+Gcvo2UNgG29GT38VnqCLG6GIAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-skeleton-wreck": {
+    "ratio": 1.3333,
+    "w": 2400,
+    "h": 1800,
+    "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACwBQCdASoYABIAPu1qr1AppaQiqAqpMB2JaACxHuGP+AWa8Ol+6qi7nJmxZgqwSUxGoEQm3bAA/SuTo+QyMZQZFl0WwUSGawE12gHQD+l4aS9hX7nYriujxEBEo7XhdK2/qAw6wYTv8BFN1bG+uYK6D0Pnd5OBVO49JZj78ATVZNjH/PKYUdWQy2R1HK16DMPZ9eafGHodKn4pk5oB9m2KAAA=",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-port-barton": {
+    "ratio": 1.5,
+    "w": 3840,
+    "h": 2560,
+    "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADQAwCdASoYABAAPu1iqU2ppaQiMAgBMB2JYwCdO/7AcG/tUHLpwIAAzZhbilnm5pslfSyWxXTVZjelxtc2zQJe0vWQuTqMN+7iyh7kv0+BijvOJxEUclo/mmTeQxibbyfbZGNfz8NKkUuz0SE15lycSnsMAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "palawan-tapyas-sunset": {
+    "ratio": 0.6667,
+    "w": 2400,
+    "h": 3600,
+    "blur": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAABQBgCdASoYACQAPu1kpk6ppaMiMBVdUTAdiWQAqSeAgHQhYsZ3203QxWZlI36JJA7hqenyrUeGEM8/gADhmi9RggChT83yi6wTFtN5/QXxVGKhVl3XctpyS4A6uahkHT923sQCXSPrC7db4/bbxiNU+6adXbAuZIjK1AEfM7b/Bwu4iAZmZyFa6NvzHtFvLFc0AuopzRI9GhanFZSXdy83fPfNuAJ9gomqqdyQMOoSnajmH4+uxgD6bv3vqXJyOpmFHeR3tyiJDptwW/EqCiqPfIJJf9nUeCFiY1Gh2Rbtp8Qd97T62biBhXWUAAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-teide-stars": {
+    "ratio": 1.5002,
+    "w": 3200,
+    "h": 2133,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAwCdASoYABAAPu1qrU8ppiQiMAgBMB2JYgCdAC0HihYtkAD+711bk0vbLhByJpTYeQs0MuUkyXh1vaoUh+FY+KMRKjym269r0gM86I7T/WEFDO1JNSiGOkAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-teide-sunset-clouds": {
+    "ratio": 1.5,
+    "w": 3456,
+    "h": 2304,
+    "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JagCdMoADTlYb5jKbh8oBnz6AAPdf7oFjmICBnG7EeEFuHcFoAzSBqAJH28Dy95zyG+xcdqvwKuuu8y6CoV21fw7Xk9F9rrXYCv9Ce4zdHi879Src0TAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-teide-road": {
+    "ratio": 1.1058,
+    "w": 2706,
+    "h": 2447,
+    "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwBACdASoYABYAPu1opk2ppqOiMBgMATAdiUAABizA3F4kbYYgEwE5V2TWuhrMR0AA/pBTwJI7YAw8uflm3Fhrt0LvmIVUPZBHS7Z1Bs3iU8rlSTqwKJffttgSlAYOaaDXpvH17ihHy8f1kTrDjuTcC8K3LiFnsn/mHU+eM18JT6A7AAA=",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-pilot-whales": {
+    "ratio": 1.5694,
+    "w": 2624,
+    "h": 1672,
+    "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwAwCdASoYAA8APu1iqU2ppaOiMAgBMB2JQBYdg6SdqOOgmn9/ZEAAAN4UXpOp6JvCwz2S4NDJkTmD8iZHFGcyGAralLxHMfUZDf95n6Fd5TkE1FPgUWpH6rB65b5e+26G190CBxyTU7h8fJjQKuLBMktICgz22Oyqc2xLtvfav6WdG1HEAAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-los-gigantes-cliffs": {
+    "ratio": 1.5002,
+    "w": 3200,
+    "h": 2133,
+    "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZACdMoR3ACm+ZubpsWGGeblleAAA+M6NyMTu6JNaMdo2CEq0mfdwMMzNB+Qy3v6W1lf57VEyGxTSrddLN39u+t3FgqhYblwx/qiawoX1+Scm5SGC4RxTo1wQ3Hyz8YJTU8adHstNbgv9zwAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-masca-valley": {
+    "ratio": 1.4996,
+    "w": 1732,
+    "h": 1155,
+    "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQCuHB0kDx/rGnS5V73swxAAAP6s1LSjJec7D4iOi6gYT5c/w9LPpbAv0RJDGNr8RDTWrzt1ABmxIh/znt7AOmy746WIN4qEf1ZD+oWtOQ0TwOn3/t/YeEfnzR4f2w5o0w+mOIUAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-anaga-laurel-forest": {
+    "ratio": 1.7743,
+    "w": 3648,
+    "h": 2056,
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADQAwCdASoYAA4APu1iqU2ppaQiMAgBMB2JZQAIEAL3ZG6t0ehzc6AA/r9+xrvc1wXiY9SVpQGEmZCCTAaQFaj5Aha8/Y9mXFa5/lmtaJ0oqhN4wwTWItMBuGgc3hbGZDiUZlvikFab738GD+TWPK6dwNoGqlSTPgAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-benijo-sunset": {
+    "ratio": 1.5,
+    "w": 3840,
+    "h": 2560,
+    "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JZQCdMoACgnkhRdwG7RU6YAD8VSGUGXqaqIBECZ9J7eZrKwLqSJi1F98slL13fvKOiayA9Ejj8C7dDzwNOSiZLVfQrtk3cnoUpqrnKSBRW980vmCdoE6SQcPka7IC8b1/dLY0OalLPaYsvNZAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-garachico-pools": {
+    "ratio": 1.4959,
+    "w": 3840,
+    "h": 2567,
+    "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZwDDVExDAHOY+NH+kqLNoo8FuAAA/kD4/BApfWcoIUUKQ+98VUo7o/9f9grAR+EW3UY5syXYP5G15aP5BHW58sxUvYSyiZWtoooPXoylGtMRMXNbOhCXr7PuhbQ0WNuYTq6nk2G1UiyUfh60AA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-papas-mojo": {
+    "ratio": 1.7778,
+    "w": 3840,
+    "h": 2160,
+    "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUAS3ApbumjDUbsz6AAD9+5mPgi9IINy2YZo8DjdrP4czDrRjEuV9Eu2OFSUT4+vasxwaZVDeq7YZ3J7v0823k/zfD/p5doZMosxs3kFUxNhHqeGKi7u4zZwDDquGH+bPvN+9lIishH21uo2eo2wmKLyqnNubzIcjwwwahNhw0AAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "tenerife-la-laguna": {
+    "ratio": 1.3312,
+    "w": 3280,
+    "h": 2464,
+    "blur": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBQCdASoYABIAPu1mrE+ppSQiMBgIATAdiWYAwzQN1wnyiPNsnMvARJkUR0NVqcGAAP0nEYqrzkdARrsb4NRCYYuviGNTbQq9p8fXNxy7vo3Q7gUdVYPwdIW3RfhxlVVLG+w9VN/3fXldaZ35li56pKfbwdfZe8cSPsex6LeBkIdsrYKBbUo+vd5a3hQhnIifd0mvDLAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-boulders-penguins": {
+    "ratio": 1.5002,
+    "w": 3200,
+    "h": 2133,
+    "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCdAYzQ7YL/zNMRE/h+uTgAAP7kXexFUhrL9/8KiXM3FWPlDgArm2+1ExfhjRb90K3IX5Xu3tkq/c2/5EdAIaYpCFginGqSq5WJAVQjpoKb4etTV8fw8oWhargflv9HRHSvnf9L1F9oJwD14vW9ZvEbqX6XK/5DxOKTyg1vcgiZ++fsXcc/yI0Tn4goSi3oSuaFH6OjMzi6cxJgEAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-cape-point-baboons": {
+    "ratio": 1.3333,
+    "w": 1600,
+    "h": 1200,
+    "blur": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAwBQCdASoYABIAPu1qr1CppaQqqAqpUB2JZgC1GoSBSBSQnrpeSJSbSp1hAsVj5AD8AAD+qHYp4cppgzLhSaW+EtX554GfTCiA7jQhd8uLXAmFFzOWEpqRoTrJEibUgLutdPVNGS+TX/vSgH7gEBt9f5gco2CCg9llTl7nJgH9ydor1ab0UteoCTFA1XhDnosOAnPy6jj9oTwK9Osrni4PZphM+oLamej02d97/+T9A5TL+nvOFn/fpbTHiUY2fgMAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-seal-snorkel": {
+    "ratio": 1.1106,
+    "w": 2108,
+    "h": 1898,
+    "blur": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAACQBQCdASoYABYAPu1wsFKppiSiqAgBMB2JbACdMoR+4BNY9SIV/yX1ZN9w8x5YzgiarUUS4AD8XGUs0t5sU0YHwhKw3D5MMTxD8hkl1HmV19t0oKyN/CBJmsnDxU3llq6TeulHyE2ldZIFi4LZLijLCGaPKJsOvuUofNAH2OV1tVTXVDb0eb6JHKmP6TBNsSAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-sanbona-elephants": {
+    "ratio": 1.7778,
+    "w": 2400,
+    "h": 1350,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoYAA0APu1iqU2ppaQiMAgBMB2JYwCw7B7G0rjxLpPmQAD+3+1OcBqTXkao03cd84l+tMmlqbPxr+kr85nwyrbFHLD8oASE2ij+Iv7l/bs6DL7RSUHQxMsfdjkmID99BFjUR6LRi26AAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-sanbona-white-lion": {
+    "ratio": 1.5,
+    "w": 3840,
+    "h": 2560,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoYABAAPu1iqk2ppaQiMAgBMB2JYgC7MoACrKga7x90j1DbYSIAAPm2ObGsUjdOlaBwGZeZzKYtcDYHPYHSZmT/cSfhBOFgeqtyYUobZHO/Mn2C9sJDxURgUIzsJAD24Aq1eBQESDYAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-table-mountain": {
+    "ratio": 1.6831,
+    "w": 1710,
+    "h": 1016,
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBACdASoYAA4APu1iqU2ppaQiMAgBMB2JbACdMoLT9AzMsRcPE5IVl7AA96C/fox1wN0DEPTEzk53GEWTOva43UHBZXjgEp0aHg0ELx83lWGFL6AoUgeEjrfcMcHBXSNsiGHdFY4lcgAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-chapmans-peak": {
+    "ratio": 1.5,
+    "w": 3840,
+    "h": 2560,
+    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdMoADNZYBUb+a49fQ/0UAAP4iyUjQWyRqwsJvE2NcL5M0IfSZ4ZA0aNscgFJfPVG6Qf97nop5I5j6mvgg5XbZ10d4+Y8zMPNZCbj3ATL7edxY9L6D9iYvSo+TRopyVJ2r3I7EAAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-franschhoek-vineyards": {
+    "ratio": 1.4982,
+    "w": 3840,
+    "h": 2563,
+    "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdIE3J/k5+EA7sEdekKmPviAD+s3NCqKltNHa9AZT75W2BaAUdCTLdhgM+CHnjL+9svBNkbPWIteGLPwWlSIlbVhOqXf4wOh+bgsQ0Halx6nUEWQv2SgW9jPWAtABV3qGMvtiLlrJO76t3EJOa/xlAeM6wAAA=",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-stellenbosch-winery": {
+    "ratio": 1.4936,
+    "w": 3840,
+    "h": 2571,
+    "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZACdACK5zVP/2pS1SE2fx5MJRAAA/u2wsBvNC1TXe1J1sg1JHfYDfFoqecKk8wpX/IOxs8UcwsIHFYxqf15ffVZeOmS9xuyCmlUFfMifMYR/G8i0xVYghOPQJUyeICYI/J/FRKsVMW9uSAqaEAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-hermanus-whale": {
+    "ratio": 1.5059,
+    "w": 3840,
+    "h": 2550,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZQCw8azA21rvnUf/1gXAAOMWQXgIsq8XqvPUc0RkRiX4CUWuOvmPc0KXlHnh9tUWvFcqxOz/LNlVVDIOHvMffx72C4Cb4BIkDS1u3AVwo3jUwAAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-cape-agulhas": {
+    "ratio": 1.5059,
+    "w": 3840,
+    "h": 2550,
+    "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoYABAAPu1iqU2ppaQiMAgBMB2JZQCw7CHEzJ0GkZNX3NC6nCAA/urH7Sde6gwYoPI8zk+xn9BkdPUGP0/IIwvYk29TQuit1jQNRpE17HiPNit3LFSKb78KKrgdXAOLrgwZlEJ+FROlRbNtqBfA2oC3ghEbKjJQAAA=",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "capetown-bo-kaap": {
+    "ratio": 1.3516,
+    "w": 3790,
+    "h": 2804,
+    "blur": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACQBQCdASoYABIAPu1qrFEppaQiqAqpMB2JbACdMoR5mKrz/AFfYFFo9P33czArIytttQvxAAD9HGnsJ0uev3ex71se3nz/ZmVAgQYHGK0QFoZE65B/s8hcoFwA6sTNkXImAUxFhK99TAL6shOZy0wG5UQBlnkXs5kR/zQ5SBP+jvqKF4z+4cMEkT9xKP37dO+xy4sDI7wCBSEw6nQg1yARPwRC37Sjwi7j9lDaZenQ/tj04Nnx0P7VswNFlAPzK5QsoNm18+2VPtf+OaAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-arieiro-sunrise": {
+    "ratio": 1.5002,
+    "w": 3200,
+    "h": 2133,
+    "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JQBOgMX6b7Hy7dwM9bOVXgGiAAPqcn1fCeG7g1rZEApOxNTeI+QoJBLbLoH2SLJPJqZ12iWn8AxGyV+QtSMzse8tcCRKFzRWcoEk3cs775pNn5yd4yntCfAa8LLJGG9Ad5bNP6G3cI4LL0KIFZ/FMs+D4AAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-pico-ruivo-ridge": {
+    "ratio": 1.5335,
+    "w": 1920,
+    "h": 1252,
+    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAACQBACdASoYABAAPu1kqk4ppaQiMAgBMB2JbACdMoMYOGMAsz6r7LYTHersXIAA/qHKKPSlWcsp3+/oOkwzVIIoBkVYFc9nkt3TTzT5Uxt4a7xaMDUuBru1seLnRebMzHQ2VhYetsNOvbK5RkIoa8BCggxC2Ls7Mu/LptuyIKRXfAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-fanal-fog-forest": {
+    "ratio": 1.5,
+    "w": 3840,
+    "h": 2560,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC7ABjy38SEQgo45UZJHngAAP6ojkdxu5fnlUZ5YDS0BdNrP2aQmw96CKTqIBXGQxE4h+BbBnQW1CO0tUNS8c162BFQxPMfl3HADCGGFr3Q6ISAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-dolphins": {
+    "ratio": 1.5,
+    "w": 3504,
+    "h": 2336,
+    "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBACdASoYABAAPu1mqk4ppaOiMAgBMB2JYgCdMoMYAEZB5hM9m3ch2++QgAD+y9egUDAd+MFlZTkjvgcN51E4JibMLr5b5Efm/ux93oFdic6UwPlGDgA21Ux9xB0ZURjM4M0TcT9sgmBWYsHe785A39UZGTIRscy+KpTAAAA=",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-sao-lourenco": {
+    "ratio": 1.3329,
+    "w": 3840,
+    "h": 2881,
+    "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACwBACdASoYABIAPuVgo02pJaMiMAwBIByJQBOmUABptj/lPhFI/zE84Mc6oYQAAP6OGcf8TNIe97pgob//Y8KzMbJLpk3RhqoTCAEw0+Rxa0iyhd9t3AaelJGE5SJ3XatWwHtpgOH5SZ902HqU56FUHyHw0zYEMDadJ9YCWsuUjhTd8VV1AAAA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-porto-moniz-pools": {
+    "ratio": 1.3333,
+    "w": 1600,
+    "h": 1200,
+    "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAQBQCdASoYABIAPu1qrVCppaQiqAqpMB2JYwC06BF+kB4eHtRV3REwv5elKm8oBkyAAP6x4o70oJulJT8XlE9DnYPlxj4gmgGHm3/oetKjO6wuluWKh52eXlvdAL+CetIloDWgtbptmJ4N1b9Wj+qMox0Vf78NOO3Qa0luq5EGN6BE87i4P5mmDErsqJDvO7Z4IQ1nqs6Mt08pXzFs7mVqAAA=",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-seixal-black-sand": {
+    "ratio": 1.4995,
+    "w": 3200,
+    "h": 2134,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQDG9CIYtk0DRGZbqpy7kAD+i7GZ9aL/zGsN8vQ1SQZFjZWQjoY2cUsZr3y4u2C/Sr8BVfzAyZu2xM69DH7E/FgsNsLg2Mq93AwvRIAAAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-25-fontes": {
+    "ratio": 1.3333,
+    "w": 3840,
+    "h": 2880,
+    "blur": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASoYABIAPu1sq1EppaOiqAqpMB2JZQC/OAoIKvc/zob0p7SFmJ1lb5QURwAA/roBuICdrbK+hpvVGWxOvbe8/hK0dKGY+OkA24yKeH5EZd2qKqGq1elgUYqKGvkstXuFel/hswaqOUZfjnwOeRmuYlrBDglX/eHs7l9Cq29p+jZQIgm8csX2INvRy4fIG/EvQIlkAA==",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-cabo-girao": {
+    "ratio": 1.519,
+    "w": 3840,
+    "h": 2528,
+    "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBdgBD37x4Pi9/qeVgpGYAD+ZtmCfJZMjDX7I9SNpRL3lXv3g/7ziWC+mgxSTdey6YC1K9SgYa2e+U6+vsVeQnzd+Z8X/R5ZjT9eos3Sk9ORbxZOncRgCPYlgw1JjXsG3cCK1+OjSxx7vZB8CDBQmOlLJFdO5n3Vm5uStcpy3C3+/uvco0AA",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  },
+  "madeira-wine-lodge": {
+    "ratio": 1.4936,
+    "w": 3840,
+    "h": 2571,
+    "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JaACsACFK1zxWgAyT/YOv/wAA/u7WzPzRW4X4JivLkuzlHHFw6eq8Ap73Vd5jc1whJ0CFeiiUw6h4MwhrLw2z8hyMdly5oOnrlE4xCbbA4r9tC6Y43Q7dD8BnFoqiB89deccB3RPGHQstFOMl4UpDmQLrtrRvZ9LeVfTnLraPYUiOPOjff3THuxbwirdhv4ES2LMQIAA=",
+    "widths": {
+      "400": 400,
+      "800": 800,
+      "1600": 1600
+    }
+  }
+}
