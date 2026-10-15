@@ -4,6 +4,7 @@ import { accentText, buttonColor } from "../lib/color";
 import { altFor, photosFor, photoMeta } from "../lib/data";
 import type { Trip } from "../types";
 import { DayTimeline } from "./DayTimeline";
+import { Journey } from "./Journey";
 import { ClockIcon, CloseIcon, GlassIcon, MountainIcon, PawIcon, SunIcon, WaveIcon } from "./Icons";
 import { Lightbox, type LightboxItem } from "./Lightbox";
 import { Modal } from "./Modal";
@@ -167,13 +168,21 @@ export function TripModal({ trip, onClose, onChoose }: Props) {
 
             <section className="tm-section" aria-labelledby={`${titleId}-days`}>
               <h3 id={`${titleId}-days`} className="tm-h3 display">
-                {copy.modal.dayByDay}
+                {trip.journey?.length ? copy.journey.heading : copy.modal.dayByDay}
               </h3>
-              <DayTimeline
-                days={trip.days}
-                scrollRoot={scrollRef}
-                onPhoto={(id, caption) => setLightbox({ items: [{ id, caption }], start: 0 })}
-              />
+              {trip.journey?.length ? (
+                <Journey
+                  stops={trip.journey}
+                  scrollRoot={scrollRef}
+                  onPhoto={(images, start) => setLightbox({ items: images.map((id) => ({ id })), start })}
+                />
+              ) : (
+                <DayTimeline
+                  days={trip.days}
+                  scrollRoot={scrollRef}
+                  onPhoto={(id, caption) => setLightbox({ items: [{ id, caption }], start: 0 })}
+                />
+              )}
             </section>
 
             <section className="tm-section" aria-labelledby={`${titleId}-gallery`}>

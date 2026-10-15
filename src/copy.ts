@@ -48,6 +48,12 @@ export const copy = {
     enlarge: (alt: string) => `Увеличи снимката: ${alt}`,
   },
 
+  journey: {
+    heading: "Пътят ни",
+    days: (range: string) => (range.includes("–") ? `Дни ${range}` : `Ден ${range}`),
+    enlarge: (alt: string) => `Увеличи снимката: ${alt}`,
+  },
+
   timeline: {
     day: (n: number) => `Ден ${n}`,
     animal: "Животинки",

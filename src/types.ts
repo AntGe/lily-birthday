@@ -26,6 +26,14 @@ export interface Day {
   special?: boolean;
 }
 
+/** A loose stretch of the trip: where we are, a vague hint, and a few photos. */
+export interface JourneyStop {
+  days: string;
+  title: string;
+  hint: string;
+  images: string[];
+}
+
 export interface Trip {
   id: string;
   order: number;
@@ -44,6 +52,7 @@ export interface Trip {
   why: { animals: string; food: string; adventure: string };
   highlights: Highlight[];
   days: Day[];
+  journey?: JourneyStop[];
   goodToKnow: string[];
 }
 
